@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript" language="JavaScript">
+
+NumberOfImagesToRotate = 318;
+
+
+FirstPart = '<img src="img/header/img';
+LastPart = '.jpg" height="75	" width="150">';
+
+function printImage() {
+var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+document.write(FirstPart + r + LastPart);
+}
+//-->
+</script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Colts Youth Organization - Colt Cadets Move Ins RSVP</title>
+
+	<link rel="shortcut icon" href="img/favicon.png">
+
+	<meta name="description" content="">
+
+	<!-- CSS -->
+	<link href="css/preload.css" rel="stylesheet" media="screen">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="css/icon_colts.css" rel="stylesheet" media="screen">
+	<link href="css/font-bank-gothic.css" rel="stylesheet" media="screen">
+	<link href="css/animate.min.css" rel="stylesheet" media="screen">
+	<link href="css/slidebars.css" rel="stylesheet" media="screen">
+	<link href="css/lightbox.css" rel="stylesheet" media="screen">
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link href="css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
+
+	<link href="css/style-red.css" rel="stylesheet" media="screen" title="default">
+	<link href="css/width-full.css" rel="stylesheet" media="screen" title="default">
+
+	<link href="css/buttons.css" rel="stylesheet" media="screen">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<!--#include file="includes/header.html" -->
+<div id="include-header"></div>
+
+<!--#include file="includes/menu.html" -->
+<div id="include-menu"></div>
+
+<header class="main-header">
+  <div class="container">
+    <h1 class="page-title pull-left">Colt Cadets Move Ins RSVP</h1>
+    <span class="pull-right hidden-sm hidden-xs">
+    	<script type="text/javascript" language="JavaScript"><!--
+printImage();
+//--></script>
+		<script type="text/javascript" language="JavaScript"><!--
+printImage();
+//--></script>
+		<script type="text/javascript" language="JavaScript"><!--
+printImage();
+//--></script>
+    </span>
+  </div>
+</header>
+
+<center><div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1 class="section-title no-margin-top">Colt Cadets Move Ins RSVP</h1>
+		</div>
+	</div>
+
+<div class="row">
+		<div class="col-xs-12">
+				<p>Please fill out this RSVP completely, then press SUBMIT. Please let us know your move in information.<br>
+                 <b>YOU MUST RSVP BEFORE MOVE INS!</b>
+If your plans change, simply submit another RSVP and your information will be updated in our database.</p>
+			
+<!-- RSVP FORM -->
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form class="form-horizontal" role="form" form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="margin-center">
+
+<input type=hidden name="oid" value="00D36000000ox9v">
+<input type=hidden name="retURL" value="http://colts.org/rsvp-cadets-submission.html">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="admin@colts.org">         -->
+<!--  ----------------------------------------------------------------------  -->
+				<p><b>PERSONAL INFORMATION</b><br>
+
+                <!-- FIRST NAME -->
+                <div class="form-group">
+                    <label for="first_name" class="col-sm-5 control-label">First Name</label>
+                    <div class="col-sm-5">
+                        <input  id="first_name" maxlength="80" name="first_name" size="20" type="text" class="form-control"/>
+                    </div>
+                </div>
+                
+                <!-- LAST NAME -->
+                <div class="form-group">
+                    <label for="last_name" class="col-sm-5 control-label">Last Name</label>
+                    <div class="col-sm-5">
+                        <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-control"/>
+                    </div>
+                </div>
+                                
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email" class="col-sm-5 control-label">Email</label>
+                    <div class="col-sm-5">
+                        <input  id="email" maxlength="80" name="email" size="20" type="text" class="form-control"/>
+                    </div>
+                </div>
+                
+                <!-- MOBILE -->
+                <div class="form-group">
+                    <label for="mobile" class="col-sm-5 control-label">Cell Phone</label>
+                    <div class="col-sm-5">
+                        <input  id="mobile" maxlength="40" name="mobile" size="20" type="text" class="form-control"/>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <p><b>CAMP ATTENDANCE</b><br>
+                <i>Use the drop down menu to indicate which camp you will be attending. To RSVP for more than one event, please submit another RSVP.</i>
+                <p>
+                
+                <!-- REHEARSAL ATTENDANCE -->
+					<div class="form-group">
+						<label for="Campaign_ID" class="col-sm-5 control-label">I plan on attending this camp:</label>
+						<div class="col-sm-1">
+							<select  id="Campaign_ID" name="Campaign_ID"><option value="">--None--</option>
+                            <option value="7011Q0000016nIP">2019 Colt Cadets Move Ins</option>
+                            </select><br>
+						</div>
+					</div>
+                                    
+                <!-- DRIVING TO CAMP -->
+                	<div class="form-group">
+						<label for="Driving" class="col-sm-5 control-label">Are you driving to move ins?</label>
+						<div class="col-sm-1">
+							<select  id="00N3600000Sbl2H" name="00N3600000Sbl2H" title="Driving To Camp"><option value="">--None--</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            </select><br>
+						</div>
+					</div>
+                    
+                <!-- FLYING OR BUSING -->
+                	<div class="form-group">
+						<label for="Flying" class="col-sm-5 control-label">Are you flying or busing to move ins?</label>
+						<div class="col-sm-1">
+							<select  id="00N3600000Sbl2M" name="00N3600000Sbl2M" title="Flying Or Busing"><option value="">--None--</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            </select><br>
+						</div>
+					</div>
+                    
+                <!-- FLIGHT OR BUS INFO -->
+                    <div class="form-group">
+                    	<label for="FlightBusInfo" class="col-sm-5 control-label">What is your flight or bus information?<br><i>Include airport, airline, flight number, time, and date of travel.</i></label>
+                        <div class="col-sm-1">
+                        	<textarea  id="00N3600000Sbl2R" name="00N3600000Sbl2R" type="text" wrap="soft" maxlength="250"></textarea><br>
+                        </div>
+                    </div>
+                <hr>
+                
+                <p><b>MOVE IN DATES</b><br>
+                    
+                <!-- MOVE IN DATE -->
+                <div class="form-group">
+                    <label for="reasons" class="col-sm-5 control-label">The full corps moves in on June 7 and June 8. Please include the date you will be moving in. If you are not moving in on June 7 or June 8, please explain here. Also include the date you will be moving in with the corps.</label>
+                    <div class="col-sm-1">
+                        <textarea  id="00N3600000T4le9" name="00N3600000T4le9" type="text" wrap="soft" maxlength="250"></textarea><br>
+                    </div>
+                </div>
+                
+                <!-- ARRIVING LATE OR LEAVING EARLY -->
+                <div class="form-group">
+                    <label for="reasons" class="col-sm-5 control-label">100% attendance is an expectation for the season. If you will need to miss any days this summer (example: graduation), please notate those dates and reasons here. Include what day(s) you will be missing from the season.</label>
+                    <div class="col-sm-1">
+                        <textarea  id="00N3600000Sbl2g" name="00N3600000Sbl2g" type="text" wrap="soft" maxlength="250"></textarea><br>
+                    </div>
+                </div>
+                
+                
+
+                <hr>
+                
+                <p><b>OTHER INFO</b><br>
+                
+                <!-- DIETARY NEEDS -->
+                    <div class="form-group">
+                    	<label for="dietary" class="col-sm-5 control-label">Do you have any special dietary needs or food allergies?<br>(e.g. vegetarian, gluten free, lactose intolerant, etc.)</label>
+                        <div class="col-sm-1">
+                        	<textarea  id="00N3600000SbL7V" name="00N3600000SbL7V" type="text" wrap="soft" maxlength="250"></textarea><br>
+                        </div>
+                    </div>
+                    
+                <!-- OTHER COMMENTS -->
+					<div class="form-group">
+						<label for="comments" class="col-sm-5 control-label">Other Comments</label>
+						<div class="col-sm-1">
+							<textarea  id="00N3600000RuGri" name="00N3600000RuGri" type="text" wrap="soft" maxlength="250"></textarea><br>
+						</div>
+					</div>
+                    
+                <hr>
+                
+                <p><b>FOR OFFICE USE</b></p>
+                
+                <!-- REHEARSAL RSVP -->
+                    <div class="form-group">
+						<label for="Inputrehearsa;" class="col-sm-5 control-label">Camp Attendance Year</label>
+						<div class="col-sm-1">
+                        	<select  id="00N3600000ScEgj" name="00N3600000ScEgj" title="Camp RSVP Years"><option value="2019">2019</option></select><br>
+                        </div>
+                    </div>
+                    
+                <!-- CAMP NAME -->
+                	<div class="form-group">
+						<label for="Inputrehearsa;" class="col-sm-5 control-label">Camp Name</label>
+						<div class="col-sm-1">
+                        	<select  id="7011Q0000016nIP" name="7011Q0000016nIP" title="Camp Name"><option value="Move Ins">Move Ins</option></select><br>
+                        </div>
+                    </div>
+
+                <!-- CORPS -->
+					<div class="form-group">
+						<label for="corps" class="col-sm-5 control-label">Which corps are you interested in?</label>
+						<div class="col-sm-1">
+							<select  id="00N3600000RuGrT" name="00N3600000RuGrT" title="Which corps are you interested in?"><option value="Colt Cadets">Colt Cadets</option></select><br>
+						</div>
+					</div>
+                    
+                    <hr>
+                
+                
+<input type="submit" name="submit" class="btn btn-ar btn-primary">
+</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- /RSVP FORM -->
+      
+<!--#include file="includes/footer.html" -->
+<div id="include-footer"></div>
+
+<!--<div id="back-top">
+	<a href="#header"><i class="fa fa-chevron-up"></i></a>
+</div> -->
+
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-switch.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/slidebars.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/buttons.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/circles.min.js"></script>
+
+<!-- Syntaxhighlighter -->
+<script src="js/syntaxhighlighter/shCore.js"></script>
+<script src="js/syntaxhighlighter/shBrushXml.js"></script>
+<script src="js/syntaxhighlighter/shBrushJScript.js"></script>
+
+<script src="js/app.js"></script>
+
+<script> 
+	$(function(){
+		$("#include-header").load("includes/header.html"); 
+		$("#include-menu").load("includes/menu.html");
+		$("#include-footer").load("includes/footer.html");
+	});
+</script> 
+
+</html>
