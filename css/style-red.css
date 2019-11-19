@@ -227,6 +227,9 @@ img
 {
     max-width: 100%;
 }
+#logo-desktop {
+    margin-left: 15px;
+}
 @font-face {
   font-family: 'SocialGlyphs';
   src: url('../fonts/socialglyphs-webfont.eot');
