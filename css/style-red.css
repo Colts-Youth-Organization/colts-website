@@ -3675,7 +3675,7 @@ a.thumbnail.active {
 /* Carousel razon */
 /*-------------------------------------------------------------------*/
 .carousel-section-e {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .carousel-e {
@@ -3710,7 +3710,7 @@ a.thumbnail.active {
 }
 .carousel-section {
   /*background-image: url("../img/slide_back.jpg");*/
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   overflow: hidden;
 }
 .carousel-razon {
