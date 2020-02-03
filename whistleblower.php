@@ -61,13 +61,23 @@ document.write(FirstPart + r + LastPart);
 	<script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript"> 
         var enableSubmit = function () {
-            document.getElementById("submitBtn").disabled = false
+            document.getElementById("submitBtn").disabled = false;
+            document.getElementById("emailInput").value = "";
         }
 
         var disableSubmit = function () {
-            document.getElementById("submitBtn").disabled = true
+            document.getElementById("submitBtn").disabled = true;
+            document.getElementById("emailInput").value = "test@colts.org";
         }
     </script>
+    <style>
+        #emailInput {
+            display: none;
+        }
+        #emailLabel {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -122,6 +132,10 @@ printImage();
 			<label for="Inputmessage" class="control-label">Message</label>
 			<br>
 			<textarea name="message" rows="10" cols="50" required></textarea>
+            <br>
+            <label id="emailLabel" for="email" class="control-label">Email</label>
+            <br>
+            <input id="emailInput" name="email" value="test@colts.org"></input>
 		</div>
 		<div class="g-recaptcha" data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH" data-callback=enableSubmit data-expired-callback=disableSubmit></div>
 		<br>
