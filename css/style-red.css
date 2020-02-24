@@ -6338,6 +6338,34 @@ a.feature-icon:hover h5{
   background-color: #fffc00;
   color: #fff;
 }
+.mobile-nav-social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 3px;
+  background-color: #f1f1f1;
+  border-top: 0;
+  overflow: hidden;
+}
+.mobile-nav-social li {
+  float: left;
+  margin: 0;
+}
+.mobile-nav-social a {
+  font-size: 1.5em;
+  margin: 0;
+  color: #444;
+  display: inline-block;
+  padding: 7px 10px;
+  min-width: 40px;
+  text-align: center;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
 /* ----- */
 .navbar-header-full {
   background-color: #f0f0f0;
