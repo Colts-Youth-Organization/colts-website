@@ -84,7 +84,7 @@
                 <li><a href="news.html">NEWS</a></li>
                 
                 <!-- STORE -->
-				<li><a href="http://store-colts-org.3dcartstores.com/">STORE</a></li>
+				<li><a href="https://store.colts.org/">STORE</a></li>
 
 			 </ul>			 
        </div><!-- navbar-collapse -->		
