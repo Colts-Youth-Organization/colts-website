@@ -5561,7 +5561,7 @@ input.input-lg[type="text"] {
 }
 a.feature-icon {
   display: table-cell;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   min-width: 130px;
   /*border-right: solid 1px #444;*/
   border-right: solid 1px transparent;
@@ -5614,7 +5614,7 @@ a.feature-icon:hover h5{
   }
   a.feature-icon {
 	float: left;
-	width: 25%;
+	width: 100%;
 	border: 0;
   }
 }
@@ -5629,7 +5629,7 @@ a.feature-icon:hover h5{
 	float: left;
 	border: 0;
 	min-width: 0;
-	width: 50%;
+	width: 100%;
   }
 }
 /* ---------------------------------------------------- */
