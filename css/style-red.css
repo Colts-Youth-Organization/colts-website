@@ -227,9 +227,7 @@ img
 {
     max-width: 100%;
 }
-#logo-desktop {
-    margin-left: 15px;
-}
+
 @font-face {
   font-family: 'SocialGlyphs';
   src: url('../fonts/socialglyphs-webfont.eot');
@@ -3473,6 +3471,13 @@ a.thumbnail.active {
 /* ---------------------------------------------------- */
 /* Navbar */
 /* ---------------------------------------------------- */
+#donateBtn {
+    background-color: #ed771d;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
 .navbar-default {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.75);
@@ -3530,12 +3535,11 @@ a.thumbnail.active {
   }
   /*Navbar*/
   .navbar-default .navbar-nav > li > a {
-	padding-top: 16px;
-	padding-bottom: 15px;
+	padding: 16px 9px 15px;
 	margin-top: -1px;
 	color: #000;
 	font-family: "Lato";
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
   }
   .navbar-default .navbar-nav > li.dropdown > a {
@@ -3594,9 +3598,10 @@ a.thumbnail.active {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-default .navbar-nav > li > a {
-	font-size: 14px;
-	padding-left: 8px;
-	padding-right: 8px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+    line-height: 12px;
   }
   .navbar-default .navbar-nav > li.dropdown > a {
 	padding-right: 25px;
@@ -3612,6 +3617,19 @@ a.thumbnail.active {
 	padding-left: 5px;
   }
 }
+@media (min-width: 1200px) {
+  /*Navbar*/
+  .navbar-default .navbar-nav > li > a {
+	padding: 16px 18px 15px;
+	margin-top: -1px;
+	color: #000;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 400;
+  }
+}
+
+
 .navbar-header .navbar-toggle {
   margin: 0;
   padding: 8px 12px 4px 12px;
@@ -5557,7 +5575,7 @@ input.input-lg[type="text"] {
 }
 a.feature-icon {
   display: table-cell;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   min-width: 130px;
   /*border-right: solid 1px #444;*/
   border-right: solid 1px transparent;
@@ -5592,6 +5610,9 @@ a.feature-icon:hover h5{
 .feature-icon:hover h4 {
   color: #fff;
 }
+.featured-article {
+    position: inherit;
+}
 @media (min-width: 1200px) {
   a.feature-icon:hover {
 	min-width: 150px;
@@ -5609,8 +5630,9 @@ a.feature-icon:hover h5{
 	border-left: 0;
   }
   a.feature-icon {
+    display: block;
 	float: left;
-	width: 25%;
+	width: 100%;
 	border: 0;
   }
 }
@@ -5625,7 +5647,7 @@ a.feature-icon:hover h5{
 	float: left;
 	border: 0;
 	min-width: 0;
-	width: 50%;
+	width: 100%;
   }
 }
 /* ---------------------------------------------------- */
@@ -6152,6 +6174,64 @@ a.feature-icon:hover h5{
 	font-size: 1.6em;
   }
 }
+
+#homepageBanner {
+    position: relative;
+    text-align: center;
+    color: rgb(256, 256, 256, 0.5);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 50em;
+
+}
+
+#homepageBannerImage {
+    max-width: none;
+    width: 200%;
+    margin-top: 0;
+    margin-left: -30%;
+}
+
+#homepageBannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: Teko;
+    font-weight: 800;
+    font-size: 3.5em;
+    line-height: 1em;
+}
+
+@media (min-width: 768px) {
+    #homepageBanner {
+        height: 20em;
+    }
+
+    #homepageBannerImage{
+        margin-top: -100px;
+        margin-left: 0;
+        width: 100%;
+    }
+    #homepageBannerText{
+        font-size: 4em;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1170px) {
+    #homepageBanner{
+        height: 30em;
+    }
+    #homepageBannerImage{
+        margin-top: -150px;
+    }
+}
+
+
 /*-------------------------------------------------------------------*/
 /* Header full */
 /*-------------------------------------------------------------------*/
@@ -6164,10 +6244,16 @@ a.feature-icon:hover h5{
 .header-full-title {
   float: left;
   overflow: hidden;
-  padding-left: 80px;
-  background-image: url("../img/colts_triangle_color.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
+}
+#logo-desktop {
+    padding-left: 0;
+    width: 300px;
+}
+@media (min-width: 992px) {
+    #logo-desktop {
+        padding-left: 15px;
+        width: 350px;
+    }
 }
 .header-full-title h1 {
   margin-bottom: 15px;
@@ -6257,18 +6343,28 @@ a.feature-icon:hover h5{
   margin: 0;
 }
 .top-nav-social a {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
   color: #444;
   display: inline-block;
-  padding: 7px 10px;
-  min-width: 40px;
+  padding: 7px 5px;
+  min-width: 20px;
   text-align: center;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+}
+@media (min-width: 990px) {
+    .top-nav-social a {
+        font-size: 2.5em;
+        padding: 7px 10px;
+        min-width: 40px;
+   }
+}
+.navbar {
+    min-height: 0;
 }
 .top-nav-social a.twitter:hover {
   background-color: #00aced;
