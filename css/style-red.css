@@ -6176,6 +6176,64 @@ a.feature-icon:hover h5{
 	font-size: 1.6em;
   }
 }
+
+#homepageBanner {
+    position: relative;
+    text-align: center;
+    color: rgb(256, 256, 256, 0.5);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 50em;
+
+}
+
+#homepageBannerImage {
+    max-width: none;
+    width: 200%;
+    margin-top: 0;
+    margin-left: -30%;
+}
+
+#homepageBannerText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: Teko;
+    font-weight: 800;
+    font-size: 3.5em;
+    line-height: 1em;
+}
+
+@media (min-width: 768px) {
+    #homepageBanner {
+        height: 20em;
+    }
+
+    #homepageBannerImage{
+        margin-top: -100px;
+        margin-left: 0;
+        width: 100%;
+    }
+    #homepageBannerText{
+        font-size: 4em;
+        line-height: 1em;
+    }
+}
+
+@media (min-width: 1170px) {
+    #homepageBanner{
+        height: 30em;
+    }
+    #homepageBannerImage{
+        margin-top: -150px;
+    }
+}
+
+
 /*-------------------------------------------------------------------*/
 /* Header full */
 /*-------------------------------------------------------------------*/
