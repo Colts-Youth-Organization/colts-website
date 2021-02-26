@@ -227,9 +227,7 @@ img
 {
     max-width: 100%;
 }
-#logo-desktop {
-    margin-left: 15px;
-}
+
 @font-face {
   font-family: 'SocialGlyphs';
   src: url('../fonts/socialglyphs-webfont.eot');
@@ -6246,10 +6244,16 @@ a.feature-icon:hover h5{
 .header-full-title {
   float: left;
   overflow: hidden;
-  padding-left: 80px;
-  background-image: url("../img/colts_triangle_color.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
+}
+#logo-desktop {
+    padding-left: 0;
+    width: 300px;
+}
+@media (min-width: 992px) {
+    #logo-desktop {
+        padding-left: 15px;
+        width: 350px;
+    }
 }
 .header-full-title h1 {
   margin-bottom: 15px;
@@ -6339,18 +6343,28 @@ a.feature-icon:hover h5{
   margin: 0;
 }
 .top-nav-social a {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
   color: #444;
   display: inline-block;
-  padding: 7px 10px;
-  min-width: 40px;
+  padding: 7px 5px;
+  min-width: 20px;
   text-align: center;
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+}
+@media (min-width: 990px) {
+    .top-nav-social a {
+        font-size: 2.5em;
+        padding: 7px 10px;
+        min-width: 40px;
+   }
+}
+.navbar {
+    min-height: 0;
 }
 .top-nav-social a.twitter:hover {
   background-color: #00aced;
