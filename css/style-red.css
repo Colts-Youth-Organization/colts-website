@@ -3476,6 +3476,9 @@ a.thumbnail.active {
 #donateBtn {
     background-color: #ed771d;
 }
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
 
 .navbar-default {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), inset 0 0 2px rgba(255, 255, 255, 0.5);
@@ -3534,12 +3537,11 @@ a.thumbnail.active {
   }
   /*Navbar*/
   .navbar-default .navbar-nav > li > a {
-	padding-top: 16px;
-	padding-bottom: 15px;
+	padding: 16px 9px 15px;
 	margin-top: -1px;
 	color: #000;
 	font-family: "Lato";
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 400;
   }
   .navbar-default .navbar-nav > li.dropdown > a {
@@ -3598,9 +3600,10 @@ a.thumbnail.active {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar-default .navbar-nav > li > a {
-	font-size: 14px;
-	padding-left: 8px;
-	padding-right: 8px;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+    line-height: 12px;
   }
   .navbar-default .navbar-nav > li.dropdown > a {
 	padding-right: 25px;
@@ -3616,6 +3619,19 @@ a.thumbnail.active {
 	padding-left: 5px;
   }
 }
+@media (min-width: 1200px) {
+  /*Navbar*/
+  .navbar-default .navbar-nav > li > a {
+	padding: 16px 18px 15px;
+	margin-top: -1px;
+	color: #000;
+	font-family: "Lato";
+	font-size: 16px;
+	font-weight: 400;
+  }
+}
+
+
 .navbar-header .navbar-toggle {
   margin: 0;
   padding: 8px 12px 4px 12px;
@@ -5596,6 +5612,9 @@ a.feature-icon:hover h5{
 .feature-icon:hover h4 {
   color: #fff;
 }
+.featured-article {
+    position: inherit;
+}
 @media (min-width: 1200px) {
   a.feature-icon:hover {
 	min-width: 150px;
@@ -5613,6 +5632,7 @@ a.feature-icon:hover h5{
 	border-left: 0;
   }
   a.feature-icon {
+    display: block;
 	float: left;
 	width: 100%;
 	border: 0;
