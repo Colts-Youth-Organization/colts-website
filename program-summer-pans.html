@@ -24,9 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="/css/navbar-min.css">
 <link rel="stylesheet" href="/css/footer-min.css">
 
-<!-- Font Awesome 
-<script src="https://kit.fontawesome.com/4375e52e26.js" crossorigin="anonymous"></script> -->
-<link href="/css/font-awesome-min.css" rel="stylesheet" media="screen">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/4375e52e26.js" crossorigin="anonymous"></script> 
+<!-- <link href="/css/font-awesome-min.css" rel="stylesheet" media="screen"> -->
 
 <!-- Custom Icons -->
 <link rel="stylesheet" href="/css/icon_colts-min.css">
@@ -50,6 +50,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPBD2GS"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Global announcement bar -->
+<!-- Remove "d-none" from #announcementBar to make visible -->
+<div id="announcementBar" class="alert show d-none" role="alert">
+  <p>Music On The March canceled due to weather. <a href="#" target="_blank">Learn&nbsp;more</a></p>
+</div>
 <!-- Organization Nav  -->
 <nav class="navbar navbar-expand-md" id="organization-nav">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars">
@@ -65,8 +70,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="/about-history">History</a>
-              <a class="dropdown-item" href="#">Policies</a>
-              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="/about-policies">Policies</a>
+              <a class="dropdown-item" href="/about-contact">Contact</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -81,8 +86,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
             <div class="dropdown-menu" aria-labelledby="peopleDropdown">
-              <a class="dropdown-item" href="#">Administrative Staff</a>
-              <a class="dropdown-item" href="#">Board Of Directors</a>
+              <a class="dropdown-item" href="/people-staff-admin">Administrative Staff</a>
+              <a class="dropdown-item" href="/people-board">Board Of Directors</a>
               <a class="dropdown-item" href="#">Hall Of Fame</a>
             </div>
           </li>
@@ -111,22 +116,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="quicklinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quicklinks</a>
             <div class="dropdown-menu" aria-labelledby="quicklinksDropdown">
-              <a class="dropdown-item" href="#">Tickets</a>
+              <a class="dropdown-item" href="https://store.colts.org/collections/tickets">Tickets</a>
               <a class="dropdown-item" href="#">Request Information</a>
               <a class="dropdown-item" href="#">Camp RSVP</a>
               <a class="dropdown-item" href="#">Member Documents</a>
               <a class="dropdown-item" href="#">Volunteer</a>
-              <a class="dropdown-item" href="#">Pay Fees</a>
+              <a class="dropdown-item" href="https://store.colts.org/collections/member-payments">Pay Fees</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="/news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="https://store.colts.org" target="_blank">Store</a>
           </li>
           <li class="nav-item" id="donateBtn">
-            <a class="nav-link" href="#">Donate</a>
+            <a class="nav-link" href="/give">Donate</a>
           </li>
         </ul>
     </div>

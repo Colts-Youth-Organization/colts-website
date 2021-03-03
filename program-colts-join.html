@@ -24,9 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="/css/navbar-min.css">
 <link rel="stylesheet" href="/css/footer-min.css">
 
-<!-- Font Awesome 
-<script src="https://kit.fontawesome.com/4375e52e26.js" crossorigin="anonymous"></script> -->
-<link href="/css/font-awesome-min.css" rel="stylesheet" media="screen">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/4375e52e26.js" crossorigin="anonymous"></script> 
+<!-- <link href="/css/font-awesome-min.css" rel="stylesheet" media="screen"> -->
 
 <!-- Custom Icons -->
 <link rel="stylesheet" href="/css/icon_colts-min.css">
@@ -50,6 +50,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPBD2GS"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Global announcement bar -->
+<!-- Remove "d-none" from #announcementBar to make visible -->
+<div id="announcementBar" class="alert show d-none" role="alert">
+  <p>Music On The March canceled due to weather. <a href="#" target="_blank">Learn&nbsp;more</a></p>
+</div>
 <!-- Organization Nav  -->
 <nav class="navbar navbar-expand-md" id="organization-nav">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars">
@@ -65,8 +70,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="/about-history">History</a>
-              <a class="dropdown-item" href="#">Policies</a>
-              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="/about-policies">Policies</a>
+              <a class="dropdown-item" href="/about-contact">Contact</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -81,8 +86,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
             <div class="dropdown-menu" aria-labelledby="peopleDropdown">
-              <a class="dropdown-item" href="#">Administrative Staff</a>
-              <a class="dropdown-item" href="#">Board Of Directors</a>
+              <a class="dropdown-item" href="/people-staff-admin">Administrative Staff</a>
+              <a class="dropdown-item" href="/people-board">Board Of Directors</a>
               <a class="dropdown-item" href="#">Hall Of Fame</a>
             </div>
           </li>
@@ -111,22 +116,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="quicklinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quicklinks</a>
             <div class="dropdown-menu" aria-labelledby="quicklinksDropdown">
-              <a class="dropdown-item" href="#">Tickets</a>
+              <a class="dropdown-item" href="https://store.colts.org/collections/tickets">Tickets</a>
               <a class="dropdown-item" href="#">Request Information</a>
               <a class="dropdown-item" href="#">Camp RSVP</a>
               <a class="dropdown-item" href="#">Member Documents</a>
               <a class="dropdown-item" href="#">Volunteer</a>
-              <a class="dropdown-item" href="#">Pay Fees</a>
+              <a class="dropdown-item" href="https://store.colts.org/collections/member-payments">Pay Fees</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="/news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Store</a>
+            <a class="nav-link" href="https://store.colts.org" target="_blank">Store</a>
           </li>
           <li class="nav-item" id="donateBtn">
-            <a class="nav-link" href="#">Donate</a>
+            <a class="nav-link" href="/give">Donate</a>
           </li>
         </ul>
     </div>
@@ -165,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid px-0">
         <div class="row pt-3 pl-md-5 no-gutters align-items-center">
             <div class="col-md-5 pl-4 pl-md-5 pr-xl-5">
-                <h1 class="display-2 mb-n2">The auditions.</h1>
+                <h1 class="display-3 mb-n2">The auditions.</h1>
                 <p>The Colts are a drum and bugle corps from Dubuque, Iowa, the smallest city nationally to host a Drum Corps International World Class drum corps. Founded in 1963, we have had four names and thousands of members. In our most recent history, we have become a championship corps, placing in the Top 12 at DCI Finals eight times. We are also only one of three corps to support a feeder corps, the Colt Cadets, which is open to students ages 11 - 17 who live primarily in Dubuque and the tri-state area.</p>
             </div>
             <div class="col-md-7 ml-xl-n5">
@@ -176,11 +181,228 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div>
 </main>
-<footer class="footer"></footer>
+<footer class="footer">
 <div class="container-fluid">
-  <div class="row py-3" id="sponsors-div">
-    <div class="col-xs-12" style="width: 100%;">
-      <img src="/img/sponsors_light.png" id="sponsors-img" />
+  <div class="row d-none d-lg-block sponsor-div" id="sponsorsDiv4">
+    <div id="sponsorCarousel4" class="carousel slide w-100" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row d-none d-md-block d-lg-none sponsor-div" id="sponsorsDiv3">
+    <div id="sponsorCarousel3" class="carousel slide w-100" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row d-block d-md-none sponsor-div" id="sponsorsDiv2">
+    <div id="sponsorCarousel2" class="carousel slide w-100" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
+            </div>
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <a href="#" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row py-4 justify-content-center" id="footer-div" >
@@ -191,11 +413,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li class="list-inline-item"><a href="https://www.facebook.com/dcicolts/" target="_blank" class="facebook"><i class="fa icon-fb-colts"></i></a></li>
         <li class="list-inline-item"><a href="https://www.facebook.com/coltcadets" target="_blank" class="facebook"><i class="fa icon-fb-cadets"></i></a></li>
         <li class="list-inline-item"><a href="https://www.facebook.com/ColtsAlumni" target="_blank" class="facebook"><i class="fa icon-fb-alumni"></i></a></li>
-        <li class="list-inline-item"><a href="https://twitter.com/dcicolts" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="https://instagram.com/dcicolts" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="/snapcode" target="_blank" class="snapchat"><i class="fa fa-snapchat-ghost"></i></a></li>
+        <li class="list-inline-item"><a href="https://twitter.com/dcicolts" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="https://instagram.com/dcicolts" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="/snapcode" target="_blank" class="snapchat"><i class="fab fa-snapchat-ghost"></i></a></li>
         <li class="list-inline-item"><a href="https://coltscooktruck.blogspot.com/" target="_blank" class="rss"><i class="fa fa-rss-square"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCZ1qNAhVcRr0Zz2gvgdhygQ" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCZ1qNAhVcRr0Zz2gvgdhygQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
         <li class="list-inline-item"><a href="https://www.dci.org/corps/colts" target="_blank" class="dci"><i class="fa fa icon-logo_dci"></i></a></li>
       </ul>
       <p class="small mt-2 d-none d-md-block">&copy; 2021 Colts Youth Organization. All rights reserved.</p>
