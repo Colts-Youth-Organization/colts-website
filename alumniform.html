@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="msapplication-TileColor" content="#cd3232">
 <meta name="theme-color" content="#ffffff">
 
-<title>Information Request - Colts Youth Organization</title>
+<title>Alumni Information - Colts Youth Organization</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -144,8 +144,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container-fluid">
         <div class="row pt-3 pl-md-5 no-gutters">
             <div class="col-xs-12 ">
-                <h1 class="display-3 mb-n2">Request info.</h1>
-                <p>Please fill out this application completely, then press SUBMIT!</p>
+                <h1 class="display-3 mb-n2">Update us.</h1>
+                <p>Thank you for being a part of the Colts legacy! Our goal, ultimately, is to have an as complete as possible list of anyone who has worn the Colts or Colt Cadets uniform from 1963 to now. We are all part of an historic bloodline, and it's important that we are able to keep that bloodline going into the future.</p>
+                <p>This information is primarily for our internal database. You may receive a few emails or paper mailings from the Colts throughout the year, but the primary use for this database will be for internal record keeping. If you would like your information added to the online database, you can indicate that below. We will post your name, section, years marched, and email online with your permission. <b><a href="/alumni-database">You can view the online database here.</a></b></p>
+                <p>If you have any questions, comments, or concerns, you can send them to the Colts Alumni Association at <a href="mailto:alumni@colts.org">alumni@colts.org</a>. Thank you for being a part of the Colts legacy!</p>
             </div>
         </div>
         <div class="row py-3 px-md-5 no-gutters">
@@ -153,7 +155,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <form role="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                     <input type=hidden name='captcha_settings' value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}'>
                     <input type=hidden name="oid" value="00D36000000ox9v">
-                    <input type=hidden name="retURL" value="https://colts.org/inforequest_submission">
+                    <input type=hidden name="retURL" value="https://colts.org/alumniform_submission">
+                    <h2>Contact Information</h2>
                     <div class="form-row">
                         <!-- FIRST NAME -->
                         <div class="form-group col-md-6">
@@ -166,6 +169,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <label for="last_name" class="control-label">Last Name</label>
                             <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" class="form-control"/>
                         </div>
+                    </div>
+
+                    <!-- NICKNAME -->
+                    <div class="form-group">
+                        <label for="00N3600000T4GgU" class="control-label">Nickname <i>(if applicable)</i></label>
+                        <input  id="00N3600000T4GgU" name="00N3600000T4GgU" size="20" required="true" class="form-control" /></span>
                     </div>
 
                     <!-- BIRTHDATE -->
@@ -222,26 +231,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <hr>
+                    <h2>Family Information</h2>
 
-                    <!-- CORPS -->
+                    <!-- MAIDEN NAME -->
                     <div class="form-group">
-                        <label for="00N3600000RuGrT" class="control-label">Which corps are you interested in?</label>
-                        <select  id="00N3600000RuGrT" class="form-control" name="00N3600000RuGrT" title="Which corps are you interested in?" required="true">
-                            <option value="" selected disabled>Choose...</option>
-                            <option value="Colts">Colts</option>
-                            <option value="Colt Cadets">Colt Cadets</option>
-                            <option value="Both">Both</option>
-                        </select>
+                        <label for="00N3600000T4F6k" class="control-label">What is your maiden name? <i>(if applicable)</i></label>
+                        <input  id="00N3600000T4F6k" maxlength="25" name="00N3600000T4F6k" size="20" type="text" class="form-control"/>
                     </div>
 
+                    <!-- SPOUSE NAME -->
+                    <div class="form-group">
+                        <label for="00N3600000T4F6p" class="control-label">What is your spouse's name? <i>(if applicable)</i></label>
+                        <input  id="00N3600000T4F6p" maxlength="25" name="00N3600000T4F6p" size="20" type="text" class="form-control">
+                    </div>
+
+                    <!-- SPOUSE INFO -->
+                    <div class="form-group">
+                        <label for="Inputspouse_info" class="control-label">Is your spouse an alumnus? <i>(if applicable)</i></label>
+                        <select  id="00N3600000T4F6u" class="form-control" name="00N3600000T4F6u" title="Alumni_Spouse Alum?">
+                            <option value="" selected disabled>Choose...</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                    <!-- PARENT INFO -->
+                    <div class="form-group">
+                        <label for="Inputparent_info" class="control-label">Are your parents alumni?</label>
+                        <select  id="00N3600000T4F6z" class="form-control" name="00N3600000T4F6z" title="Alumni_Parents Alum?">
+                            <option value="" selected disabled>Choose...</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    
+                    <hr>
+
+                    <h2>Corps History Information</h2>
+                    <p>You can use the drop down fields below to indicate what you would consider your "primary" section and instrument or equipment when you marched with the Colts and/or Colt Cadets. If you were a member of more than one section, please use the comments box at the end of this form.</p>
+                    
                     <!-- SECTION -->
                     <div class="form-group">
-                        <label for="00N3600000RuGrJ" class="control-label">Which section are you interested in?</label>
+                        <label for="00N3600000RuGrJ" class="control-label">Which section did you march in?</label>
                         <select  id="00N3600000RuGrJ" class="form-control" name="00N3600000RuGrJ" title="Which section are you interested in?">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Brass">Brass</option>
                             <option value="Percussion">Percussion</option>
                             <option value="Guard">Guard</option>
+                            <option value="Arms">Drum Major</option>
                             <option value="Conductor">Conductor</option>
                         </select>
                     </div>
@@ -262,35 +299,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <option value="Front Ensemble">Front Ensemble</option>
                             <option value="Flag">Flag</option>
                             <option value="Flag or Weapons">Flag or Weapons</option>
+                            <option value="Drum Major">Drum Major</option>
                             <option value="Conductor">Conductor</option>
                         </select>
                     </div>
 
-                    <!-- PRIOR MARCHING EXPERIENCE -->
+                    <!-- YEARS MARCHED -->
                     <div class="form-group">
-                        <label for="00N3600000RuGrd" class="control-label">Please list any prior marching experience (e.g. high school, college, drum corps, WGI, etc.)</label>
-                        <textarea  id="00N3600000RuGrd" class="form-control" name="00N3600000RuGrd" type="text" wrap="soft" maxlength="250"></textarea>
+                        <label for="00N3600000T4F74" class="control-label">What years were you in the Colts and/or Colt Cadets? <i>(e.g. Colt Cadets 1983-1985, Colts 1986-1989)</i></label>
+                        <textarea  id="00N3600000T4F74" name="00N3600000T4F74" rows="4" type="text" wrap="soft" class="form-control"></textarea>
                     </div>
-
+                    
+                    <!-- AGE OUT -->
+                    <div class="form-group">
+                        <label for="00N3600000T4F79" class="control-label">Did you age out with the Colts? If so, what year?</label>
+                        <textarea  id="00N3600000T4F79" name="00N3600000T4F79" rows="4" type="text" wrap="soft" class="form-control"></textarea>
+                    </div>
+                    
+                    <!-- STAFF YEARS -->
+                    <div class="form-group">
+                        <label for="00N3600000T4F7E" class="control-label">Were you on staff with the Colts or Colt Cadets? If so, please specify what years and with which corps.</label>
+                        <textarea  id="00N3600000T4F7E" name="00N3600000T4F7E" rows="4" type="text" wrap="soft" class="form-control"></textarea>
+                    </div>
+                    
+                    <!-- OTHER POSITIONS -->
+                    <div class="form-group">
+                        <label for="00N3600000T4F7J" class="control-label">Have you ever held any other positions with the Colts? <i>(e.g. board member, hall of fame, driver, volunteer)</i> If so, please specify which job and which years.</label>
+                        <textarea  id="00N3600000T4F7J" name="00N3600000T4F7J" rows="4" type="text" wrap="soft" class="form-control"></textarea><br>
+                    </div>
+                    
+                    <hr>
+                    
                     <!-- OTHER COMMENTS -->
                     <div class="form-group">
-                        <label for="00N3600000RuGri" class="control-label">Other Comments</label>
-                        <textarea  id="00N3600000RuGri" class="form-control" name="00N3600000RuGri" type="text" wrap="soft" maxlength="250"></textarea>
+                        <label for="00N3600000T4F7Y" class="control-label">Any other comments about your time with the Colts and/or Colt Cadets?</label>
+                        <textarea  id="00N3600000T4F7Y" name="00N3600000T4F7Y" rows="4" type="text" wrap="soft" class="form-control" maxlength="500"></textarea>
                     </div>
-
-                    <!-- CONSTITUENCY -->
-                    <div class="form-group d-none">
-                        <label for="00N3600000RuTCa" class="control-label">Interested In 2021</label>
-                        <select  id="00N3600000RuTCa" name="00N3600000RuTCa" title="Constituency">
-                            <option value="Membership">Interested In 2021</option>
-                        </select>
-                    </div>
-
-                    <!-- REQUESTED INFO -->
-                    <div class="form-group d-none">
-                        <label for="00N3600000TTXw3" class="control-label">Requested Information</label>
-                        <select  id="00N3600000TTXw3" name="00N3600000TTXw3" title="Current Year Info Request">
+                    
+                    <!-- PUBLISH INFO -->
+                    <div class="form-group">
+                        <label for="00N3600000T4F7O" class="control-label">Would you like to have your information (name, email, years marched, and section) listed on the online Colts Alumni Database?</label>
+                        <select  id="00N3600000T4F7O" name="00N3600000T4F7O" title="Alumni_Publish Info?" class="form-control">
                             <option value="Yes">Yes</option>
+                            <option value="No">No</option>
                         </select>
                     </div>
 
@@ -298,11 +349,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="form-group d-none">
                         <label for="00N3600000ScCp5" class="control-label">Form Submitted</label>
                         <select  id="00N3600000ScCp5" name="00N3600000ScCp5" title="Form Submitted">
-                            <option value="Information Request">Information Request</option>
+                            <option value="Alumni Information">Alumni Information</option>
                         </select>
                     </div>
 
-                    <div class="g-recaptcha" data-theme="dark" data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH" data-callback=enableSubmit data-expired-callback=disableSubmit></div><br>
+                    <div class="g-recaptcha" data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH" data-callback=enableSubmit data-expired-callback=disableSubmit></div><br>
                     <button id="submitBtn" value="submit" type="submit" class="btn btn-red" disabled>Submit</button>
                 </form>
             </div>
