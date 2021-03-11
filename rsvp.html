@@ -225,7 +225,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- REHEARSAL ATTENDANCE -->
                     <div class="form-group">
                         <label for="Campaign_ID" class="control-label">I plan on attending this camp:</label>
-                        <select  id="Campaign_ID" class="form-control" name="Campaign_ID">
+                        <select  id="Campaign_ID" class="form-control" name="Campaign_ID" onchange="updateCampName(this)">
                             <option value="" selected disabled>Choose...</option>
                             <option value="7011Q0000013YRa">November | Dubuque, IA (All Sections)</option>
                             <option value="7011Q0000013YRf">December | Dubuque, IA (All Sections)</option>
@@ -290,13 +290,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <textarea  id="00N3600000RuGri" class="form-control" name="00N3600000RuGri" type="text" wrap="soft" maxlength="250"></textarea>
                     </div>
 
-
                     <!-- REHEARSAL RSVP -->
                     <div class="form-group d-none">
                         <label for="00N3600000ScEgj" class="control-label">Camp Attendance Year</label>
                         <select  id="00N3600000ScEgj" class="form-control" name="00N3600000ScEgj" title="Camp RSVP Years">
                             <option value="2020">2020</option>
                         </select>
+                    </div>
+
+                    <!-- CAMP NAME -->
+                    <div class="form-group d-none">
+                        <label for="00N3600000TTgVu" class="control-label">Camp Name</label>
+                        <input  id="00N3600000TTgVu" name="00N3600000TTgVu" size="20" class="form-control"/>
                     </div>
 
                     <!-- CORPS -->
@@ -610,6 +615,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var disableSubmit = function () {
         document.getElementById("submitBtn").disabled = true;
         document.getElementById("emailInput").value = "test@colts.org";
+    }
+</script>
+<script>
+    function updateCampName(selectObject) {
+        var selectedCamp = selectObject.options[selectObject.selectedIndex].text
+        console.log(selectedCamp);
+        document.getElementById('00N3600000TTgVu').value = selectedCamp
     }
 </script>
 
