@@ -203,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- FIRST NAME -->
                         <div class="form-group col-md-6">
                             <label for="first_name">First Name</label>
-                            <input  id="first_name" maxlength="80" name="first_name" type="text" required="true" class="form-control"/>
+                            <input  id="first_name" maxlength="80" name="first_name" size="20" type="text" required="true" class="form-control"/>
                         </div>
         
                         <!-- LAST NAME -->
@@ -212,6 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" class="form-control"/>
                         </div>
                     </div>
+
                     <!-- BIRTHDATE -->
                     <div class="form-group">
                         <label for="00N3600000RuGpw" class="control-label">Birthdate</label>
@@ -221,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <!-- EMAIL -->
                     <div class="form-group">
                         <label for="email" class="control-label">Email</label>
-                        <input  id="email" maxlength="80" name="email" size="20" type="email" required="true" class="form-control " placeholder="name@example.com"/>
+                        <input  id="email" maxlength="80" name="email" size="20" type="email" required="true" class="form-control" placeholder="name@example.com"/>
                     </div>
     
                     <!-- MOBILE -->
@@ -231,14 +232,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     
                     <!-- ADDRESS TYPE -->
-                    <div class="form-group" style="display: none;">
-                        <label for="corps" class="col-sm-5 control-label">Primary Address Type</label>
-                        <div class="col-sm-1">
-                            <select  id="00N3600000SbnpQ" name="00N3600000SbnpQ" title="Primary Mailing Address Type">
-                                <option value="Home">Home</option>
-                            </select><br>
-                        </div>
+                    <div class="form-group d-none">
+                        <label for="00N3600000SbnpQ" class="control-label">Primary Address Type</label>
+                        <select  id="00N3600000SbnpQ" name="00N3600000SbnpQ" title="Primary Mailing Address Type">
+                            <option value="Home">Home</option>
+                        </select>
                     </div>
+
                     <!-- STREET -->
                     <div class="form-group">
                         <label for="street" class="control-label">Street Address</label>
@@ -248,7 +248,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- CITY -->
                         <div class="form-group col-md-6">
                             <label for="city" class="control-label">City</label>
-                                <input  id="city" maxlength="40" name="city" size="20" type="text" class="form-control"/>
+                            <input  id="city" maxlength="40" name="city" size="20" type="text" class="form-control"/>
                         </div>
                         
                         <!-- STATE -->
@@ -280,7 +280,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <!-- SECTION -->
                     <div class="form-group">
-                        <label for="section" class="control-label">Which section are you interested in?</label>
+                        <label for="00N3600000RuGrJ" class="control-label">Which section are you interested in?</label>
                         <select  id="00N3600000RuGrJ" class="form-control" name="00N3600000RuGrJ" title="Which section are you interested in?">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Brass">Brass</option>
@@ -292,7 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                     <!-- INSTRUMENT / EQUIPMENT -->
                     <div class="form-group">
-                        <label for="Inputinterested_in" class="control-label">What instrument or equipment?</label>
+                        <label for="00N3600000SbFHY" class="control-label">What instrument or equipment?</label>
                         <select  id="00N3600000SbFHY" class="form-control" name="00N3600000SbFHY" title="What instrument or equipment?">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Trumpet">Trumpet</option>
@@ -317,35 +317,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- CONSTITUENCY -->
-                    <div class="form-group" style="display: none;">
-						<div class="col-sm-1">
-                        	<select  id="00N3600000RuTCa" name="00N3600000RuTCa" title="Constituency"><option value="Membership">Membership</option></select>
-                        </div>
+                    <div class="form-group d-none">
+                        <select  id="00N3600000RuTCa" name="00N3600000RuTCa" title="Constituency">
+                            <option value="Membership">Membership</option>
+                        </select>
                     </div>
     
                     <!-- CAMP NAME -->
-                    <div class="form-group" style="display: none;">
-                        <div class="col-sm-1">
-                            <select  id="00N3600000TTgVu" name="00N3600000TTgVu" title="Camp Name"><option value="Colts Red Zone">Colts Red Zone</option></select><br>
-                        </div>
+                    <div class="form-group d-none">
+                        <input  id="00N3600000TTgVu" name="00N3600000TTgVu" title="Camp Name" value="Colts Red Zone" />
                     </div>
     
                     <!-- FORM SUBMITTED -->
-                    <div class="form-group" style="display: none;">
-                        <div class="col-sm-1">
-                            <select  id="00N3600000ScCp5" name="00N3600000ScCp5" title="Form Submitted"><option value="RSVP">RSVP</option></select><br>
-                        </div>
+                    <div class="form-group d-none">
+                        <select  id="00N3600000ScCp5" name="00N3600000ScCp5" title="Form Submitted">
+                            <option value="RSVP">RSVP</option>
+                        </select>
                     </div>
                     
                     <!-- REHEARSAL ATTENDANCE -->
-                    <div class="form-group" style="display:none;">
-                        <div class="col-sm-1">
-                            <select  id="Campaign_ID" name="Campaign_ID">
-                                <option value="7011Q000001FKGK">Colts Red Zone</option>
-                            </select><br>
-                        </div>
+                    <div class="form-group d-none">
+                        <select  id="Campaign_ID" name="Campaign_ID">
+                            <option value="7011Q000001FKGK">Colts Red Zone</option>
+                        </select>
                     </div>
-    
     
                     <div class="g-recaptcha" data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH" data-callback=enableSubmit data-expired-callback=disableSubmit></div><br>
                     <button id="submitBtn" value="submit" type="submit" class="btn btn-red" disabled>Submit</button>
