@@ -90,6 +90,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
             <div class="dropdown-menu" aria-labelledby="peopleDropdown">
               <a class="dropdown-item" href="/people-staff-admin">Administrative Staff</a>
+              <a class="dropdown-item" href="/people-staff-colts">Colts Staff</a>
+              <a class="dropdown-item" href="/people-staff-cadets">Colt Cadets Staff</a>
               <a class="dropdown-item" href="/people-board">Board Of Directors</a>
               <a class="dropdown-item" href="/people-hof">Hall Of Fame</a>
             </div>
@@ -142,14 +144,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main>
     <div class="container-fluid">
-        <div class="row pt-3 pl-md-5 no-gutters">
-            <div class="col-xs-12 ">
+        <div class="row pt-3 px-md-3 px-lg-5">
+            <div class="col-12 ">
                 <h1 class="display-3 mb-n2">Request info.</h1>
                 <p>Please fill out this application completely, then press SUBMIT!</p>
             </div>
         </div>
-        <div class="row py-3 px-md-5 no-gutters">
-            <div class="col-xs-12">
+        <div class="row py-3 px-md-3 px-lg-5">
+            <div class="col-12">
                 <form role="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                     <input type=hidden name='captcha_settings' value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}'>
                     <input type=hidden name="oid" value="00D36000000ox9v">
@@ -590,12 +592,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript">
     var enableSubmit = function () {
         document.getElementById("submitBtn").disabled = false;
-        document.getElementById("emailInput").value = "";
     }
 
     var disableSubmit = function () {
         document.getElementById("submitBtn").disabled = true;
-        document.getElementById("emailInput").value = "test@colts.org";
     }
 </script>
 </body>

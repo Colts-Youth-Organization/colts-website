@@ -40,7 +40,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="msapplication-TileColor" content="#cd3232">
 <meta name="theme-color" content="#ffffff">
 
-<title>Administrative Staff - Colts Youth Organization</title>
+<title>Whistleblower - Colts Youth Organization</title>
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -139,14 +139,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </nav>
 
+
 <main>
     <div class="container-fluid">
         <div class="row pt-3 px-md-3 px-lg-5">
             <div class="col-12">
-                <h1 class="display-3 mb-n2">Our team.</h1>
+                <h1 class="display-3 mb-n2">Reach out.</h1>
+                <p>The Colts Youth Organization requires directors, employees, volunteers, and members to observe high standards of business and personal ethics in conduct of their duties and responsibilities. As representatives of the Colts, we must practice honesty and integrity in fulfilling our responsibilities and comply with all applicable laws and regulations.</p>
+                <p>The Colts Youth Organization firmly believes in, and is committed to, creating and maintaining, an open and transparent environment where any person involved with the organization feels comfortable and able to raise concerns, complaints, and issues with the Colts. However, we understand it is also essential we provide an avenue for confidential and anonymous submission of concerns, complaints, and issues to ensure the Colts has the full opportunity to investigate and address any potential violations of policy, law, or ordinance in the conduct of activities associated with the Colts.</p>
+                <p>To view the full Whistleblower Policy, you can <a href="/documents/whistleblower.pdf" target="_blank">click here.</a></p>
             </div>
         </div>
-
         <div class="row py-3 px-md-3 px-lg-5">
             <div class="col-12">
                 <div class="row">
@@ -154,77 +157,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <hr>
                     </div>
                 </div>
+                <h2 class="section-title">Submit Your Concern Anonymously</h2>
+                <p>All submissions are anonymous and confidential. You <strong>do not</strong> need to include your name and/or contact information. However, if you would like a direct response, please do include your contact information or email <a href="mailto:whistleblower@colts.org">whistleblower@colts.org</a> directly.</p>
                 <div class="row">
                     <div class="col-12">
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mb-3 staff-photos">
-                            <div class="col mb-2">
-                                <div class="card" data-toggle="modal" data-target="#bioOverlay" data-name="jeff-macfarlane">
-                                    <img src="img/staff/macfarlane_jeff.jpg" class="card-img"/>
-                                    <div class="card-img-overlay background">
-                                        <p class="staff-name invisible">Jeff MacFarlane</p>
-                                        <p class="staff-position invisible">Executive Director</p>
-                                    </div>
-                                    <div class="card-img-overlay">
-                                        <p class="staff-name">Jeff MacFarlane</p>
-                                        <p class="staff-position">Executive Director</p>
-                                    </div>
-                                </div>
+                        <form role="form" method="post" action="/whistleblowerscript.php">
+                            <input type=hidden name='captcha_settings' value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}'>
+                            <div class="form-group">
+                                <label for="Inputmessage" class="control-label">Message *</label>
+                                <textarea id = "Inputmessage" name="message" class="form-control" type="text" wrap="soft" required="true"></textarea>
                             </div>
-                            <div class="col mb-2">
-                                <div class="card" data-toggle="modal" data-target="#bioOverlay" data-name="vicki-macfarlane">
-                                    <img src="img/staff/no_photo.jpg" class="card-img"/>
-                                    <div class="card-img-overlay background">
-                                        <p class="staff-name invisible">Vicki (Schaffer) MacFarlane</p>
-                                        <p class="staff-position invisible">Director of Youth Programs <br> Director, Colts Drum &amp; Bugle Corps</p>
-                                    </div>
-                                    <div class="card-img-overlay">
-                                        <p class="staff-name">Vicki (Schaffer) MacFarlane</p>
-                                        <p class="staff-position">Director of Youth Programs <br> Director, Colts Drum &amp; Bugle Corps</p>
-                                    </div>
-                                </div>
+
+                            <!-- EMAIL HONEYPOT -->
+                            <div class="form-group d-none">
+                                <label for="email" class="control-label">Email</label>
+                                <input  id="email" maxlength="80" name="email" size="20" type="email" class="form-control" value="test@colts.org"/>
                             </div>
-                            <div class="col mb-2">
-                                <div class="card" data-toggle="modal" data-target="#bioOverlay" data-name="rich-waddington">
-                                    <img src="img/staff/no_photo.jpg" class="card-img"/>
-                                    <div class="card-img-overlay background">
-                                        <p class="staff-name invisible">Rich Waddington</p>
-                                        <p class="staff-position invisible">Accountant <br> Director, Colt Cadets Drum &amp; Bugle Corps</p>
-                                    </div>
-                                    <div class="card-img-overlay">
-                                        <p class="staff-name">Rich Waddington</p>
-                                        <p class="staff-position">Accountant <br> Director, Colt Cadets Drum &amp; Bugle Corps</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                            <div class="g-recaptcha" data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH" data-callback=enableSubmit data-expired-callback=disableSubmit></div><br>
+                            <button id="submitBtn" value="submit" type="submit" class="btn btn-red" disabled>Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="bioOverlay" tabindex="-1" aria-labelledby="staffBioLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" id="staffBioModal">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h3 class="modal-title" id="staffBioLabel">DESIGN</h3>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <div class="bio-image-container float-left">
-                        <img src="" class="bio-image w-100"/>
-                    </div>
-                    <h3 class="bio-name"></h3>
-                    <p class="bio-position"></p>
-                    <span class="bio-text"></span>
-                </div>
-                <div class="modal-footer justify-content-between">
-                  <button type="button" class="btn btn-secondary" id="prevBtn" onclick="prevClicked()"><i class="fas fa-chevron-left"></i> PREV</button>
-                  <button type="button" class="btn btn-secondary" id="nextBtn" onclick="nextClicked()">NEXT <i class="fas fa-chevron-right"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
     </div>
 </main>
 <footer class="footer">
@@ -501,74 +457,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+<script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
-    const imgPrefix = 'img/staff/';
-    const bioDict = {
-        
-        'jeff-macfarlane': {
-            'name': 'Jeff MacFarlane',
-            'position': 'Executive Director',
-            'team': 'ADMINISTRATION',
-            'image': 'macfarlane_jeff.jpg',
-            'bio': "<p>Jeff is a long-time drum corps junkie having grown up as the youngest of five marching siblings of the Colts. He started as a snare drummer with the Colt Cadets in 1973-74, graduated to the 'A' Corps on bass with the Colt .45 in 1975, and marched his last two years as a tenor (CQB!) in the Colts in 1976-77. He regrets that he left a few good years on the shelf having not marched until aging out. In 2009, Jeff returned to the drumline as the oldest marching member of the Colts Presidential Inaugural Parade Corps.</p><p>Jeff currently serves as executive director for the Colts Youth Organization where he oversees the business operations for the nonprofit corporation. He was previously the group's controller (2005-12), and program coordinator for the Colt Cadets Drum & Bugle Corps (2008-12). He first became a member of the Colts Cadets design team in 2006 where he brought his 20+ years of graphic design experience to the football field in several visual capacities. He also works on graphic design and marketing projects for the organization.</p><p>Jeff received his Bachelor of Fine Arts in Visual Communication from Northern Illinois University in 1984. In 1994, he started his own business - Get Smart Design Company - doing logos, brochures, advertising and websites for businesses throughout the Midwest, as well as an occassional pro bono project for the Colts.</p><p>In 1998, Get Smart Design was one of ten small businesses in Iowa to receive the Benchmark Award from the Iowa Secretary of State for entreprenurial spirit and community good deeds. Jeff received the Silver Medal from the <a href=\"https://www.aafdubuque.com/\">Advertising Club of Dubuque</a> in 1998 -- a lifetime achievement award, of sorts. In 2000, he was named the American Advertising Federation's 9th District President of the Year.</p><p>Having sold the business (then known as Mission Creative) in 2003, he was between jobs in 2005 when an \"opportunity\" to help in the Colts office selling Music On The March tickets eventually led to his current position.</p><p>Jeff is so proud of his two kids, Max (a former Colt Cadet and resident of Fort Collins, Colorado) and Maddie (an avid hockey fan and published photographer with a master's degree in sports management). He is also quite proud to work side-by-side with his wife, Vicki, trying to make the Colts organization the best it can be.</p>"
-        },
-        'vicki-macfarlane': {
-            'name': 'Vicki (Schaffer) MacFarlane',
-            'position': 'Director of Youth Programs \\ Director, Colts Drum & Bugle Corps',
-            'team': 'ADMINISTRATION',
-            'image': 'macfarlane_vicki.jpg',
-            'bio': "<p>As director of youth programs, Vicki is responsible for the operations of the Colts Youth Organization, which includes the World Class Colts Drum &amp; Bugle Corps, the Open Class Colt Cadets, and the Colts Summer Band. At the 2018 Drum Corps International World Championships, Vicki was awarded the George Bonfiglio Chairperson's Award. She was also honored with a Women of Achievement Award for service and support of nonprofit work in May 2018.</p><p>Vicki began working for the Colts in May 2001, and was director of the Colt Cadets from 2002-2012. Besides making sure everyone was in the right place at the right time, she spent valuable time working with the Cadets instructional team and strengthening the visual program. In her time as director, she saw the membership grow from a perfectly-proportioned ensemble of 18 (six each of brass, percussion and color guard) to become a DCI Open Class Finalist for the first time in 2010, and repeating that distinction again in 2011 and 2012. The Colt Cadets were named Most Improved Corps in DCI's Division II in 2006.</p><p>Vicki served six terms as chair of Drum Corps International's Open Class Advisory Committee where she acted as liaison between the Open Class directors and DCI's Board of Directors. She resigned that position in January 2013, when she became director of the Colts.</p><p>Vicki played baritone for the Colts in 1994 and 1995. She also marched baritone in the 2009 Presidential Inaugural Parade in Washington, D.C. Her favorite bit of musicianship was on the clarinet as a member of the Wartburg College Concert Band on their 40-day tour of Europe where she soloed during Rhapsody In Blue</p><p>She moved to Dubuque in May 2001 from the English Valleys Community School District, where she served as the 5th-12th grade instrumental music director (as well as \"coach\" for a variety of sports) from 1998-2001. She earned her degree in music education from Wartburg College in Waverly, Iowa. Vicki serves as an active educator, clinician, and adjudicator in Iowa and the Midwest. She has taught clarinet privately, and has performed with the Waterloo/Cedar Falls and Cedar Rapids Symphony Orchestras.</p><p>Vicki is currently pursuing her masters degree in the Arizona State University Nonprofit Leadership Management program. She lives with her husband, Jeff, in their ofttimes-staff-filled home in Dubuque.</p>"
-        },
-        'rich-waddington': {
-            'name': 'Rich Waddington',
-            'position': 'Accountant \\ Director, Colt Cadets Drum & Bugle Corps',
-            'team': 'ADMINISTRATION',
-            'image': 'waddington_rich.jpg',
-            'bio': "<p>Rich taught band for over 18 years in Iowa. His first job was at Bondurant-Farrar High School, where he taught 5th grade through 12th grade for six years. With the growth of the program, he transitioned to teaching 7th grade through 12th grade until his departure in 2011. In the fall of 2011, Rich accepted the position of director of bands at Oskaloosa High School in southeast Iowa. The program enjoyed many years of success in its rich history in all areas, including marching band, concert band, and jazz band.</p><p>Rich and his wife, Angie, have two children, Carter and Morgan -- both Colt Cadets. Following the 2019 season, they moved to Dubuque when Rich accepted a full-time position with the Colts Youth Organization. He enjoys spending time at home with his family, cooking, doing projects around the house, and working on his model trains. The whole family was involved with Colt Cadets in 2018-19, and they look forward to many more seasons of fun with the Colts organization!</p>"
-        },
-        'aidan-connolly': {
-            'name': 'Aidan Connolly',
-            'position': 'Director of Media and Events',
-            'team': 'ADMINISTRATION',
-            'image': 'connolly_aidan.jpg',
-            'bio': "<p>After watching the Colts rehearse each summer in his hometown of DeWitt, Iowa, Aidan first joined the Colts in 2015 as a baritone player. His next two summers were filled with summer classes, traveling and an internship, but he came back to age out with the corps in 2018.</p><p>In 2019, Aidan returned as a volunteer, completing various tasks during the offseason and serving as a driver for three weeks in the summer. Now, he's joined the organization as director of media and events. Aidan creates and organizes content for the corps website, newsletters, and social media pages, and he also works to schedule and facilitate recruiting, audition, and competitive events for the organization.</p><p>Prior to his full-time position with the Colts, Aidan worked as an analytics consultant for Digital IQ. He also served as a drumline instructor for the Central DeWitt High School marching band.</p><p>Aidan is an alumnus of the University of Nebraska-Lincoln, where he earned his Bachelor of Journalism degree with minors in informatics, mathematics, music, and music technology. As a student, Aidan played baritone in the Cornhusker Marching Band and participated in various choral ensembles.</p><p>Outside of work, Aidan spends his time cooking, riding his bike, cheering on the Cornhuskers, and traveling to stay in touch with friends. He's still an active piano and organ player, and he'll attend pretty much any concert. Especially if it's free.</p>"
-        }
-    };
-
-    var staffName = "";
-    const staffList = Object.keys(bioDict);
-
-    $('#bioOverlay').on('show.bs.modal', function(event) {
-        var button = $(event.relatedTarget)
-        staffName = button.data('name')
-        updateModal(staffName)
-    });
-
-    function updateModal(newName) {
-        var modal = $('#bioOverlay');
-        modal.find('.bio-name').text(bioDict[newName]['name']);
-        modal.find('.bio-position').text(bioDict[newName]['position']);
-        modal.find('#staffBioLabel').text(bioDict[newName]['team']);
-        modal.find('.bio-image')[0].src = imgPrefix + bioDict[newName]['image'];
-        modal.find('.bio-text')[0].innerHTML = bioDict[newName]['bio'];
-        staffName = newName;
-    };
-
-    function prevClicked() {
-        const currentIndex = staffList.indexOf(staffName);
-        const previousIndex = currentIndex === 0 ? staffList.length - 1 : currentIndex - 1;
-        const previousPerson = staffList[previousIndex];
-        updateModal(previousPerson);
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+</script>
+<script type="text/javascript">
+    var enableSubmit = function () {
+        document.getElementById("submitBtn").disabled = false;
+        document.getElementById("emailInput").value = "";
     }
 
-    function nextClicked() {
-        const currentIndex = staffList.indexOf(staffName);
-        const nextIndex = currentIndex === staffList.length - 1 ? 0 : currentIndex + 1;
-        const nextPerson = staffList[nextIndex];
-        updateModal(nextPerson);
+    var disableSubmit = function () {
+        document.getElementById("submitBtn").disabled = true;
+        document.getElementById("emailInput").value = "test@colts.org";
     }
 </script>
-
-
 </body>
+
 </html>

@@ -50,6 +50,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPBD2GS"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- Global announcement bar -->
+<!-- Remove "d-none" from #announcementBar to make visible -->
+<div id="announcementBar" class="alert show d-none" role="alert">
+  <p>Music On The March canceled due to weather. <a href="#" target="_blank">Learn&nbsp;more</a></p>
+</div>
 <!-- Organization Nav  -->
 <nav class="navbar navbar-expand-md" id="organization-nav">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars">
@@ -59,16 +64,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="collapse navbar-collapse navbars justify-content-center" id="navbar2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="/program-red-zone">Join!</a>
+            <a class="nav-link" href="/join">Join!</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <a class="dropdown-item" href="/join">Join The Colts</a>
-              <a class="dropdown-item" href="/about-general">Colts Youth Organization</a>
               <a class="dropdown-item" href="/about-history">History</a>
-              <a class="dropdown-item" href="/about-volunteer">Volunteer</a>
-              <a class="dropdown-item" href="/donate">Donate</a>
               <a class="dropdown-item" href="/policies">Policies</a>
               <a class="dropdown-item" href="/about-contact">Contact</a>
             </div>
@@ -80,7 +81,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a class="dropdown-item" href="/program-cadets">Colt Cadets</a>
               <a class="dropdown-item" href="/program-summer-band">Colts Summer Band</a>
               <a class="dropdown-item" href="/program-summer-pans">Colts Summer Pans</a>
-              <a class="dropdown-item" href="/program-red-zone">Colts Red Zone</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -97,10 +97,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumni</a>
             <div class="dropdown-menu" aria-labelledby="alumniDropdown">
               <a class="dropdown-item" href="/alumni-about">Alumni Association</a>
-              <a class="dropdown-item" href="/alumni-events">Events</a>
+              <a class="dropdown-item" href="#">Events</a>
               <a class="dropdown-item" href="/alumni-database">Database</a>
-              <a class="dropdown-item" href="/alumni-volunteer">Volunteer</a>
-              <a class="dropdown-item" href="/alumni-monthly-giving">Monthly Giving</a>
             </div>
           </li>
           <li class="nav-item d-none d-md-inline-block" id="navbar-logo-item">
@@ -109,36 +107,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="schedulesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Schedules</a>
             <div class="dropdown-menu" aria-labelledby="schedulesDropdown">
-              <a class="dropdown-item" href="/schedule-tour-events">Tour Events</a>
-              <a class="dropdown-item" href="/schedule-preseason">Colts Preseason</a>
-              <a class="dropdown-item" href="/schedule-preseason-cadets">Colt Cadets Preseason</a>
+              <a class="dropdown-item" href="#">Tour Events</a>
+              <a class="dropdown-item" href="#">Colts Preseason</a>
+              <a class="dropdown-item" href="#">Colt Cadets Preseason</a>
               <a class="dropdown-item" href="/schedule-colts">Colts Tour</a>
               <a class="dropdown-item" href="/schedule-cadets">Colt Cadets Tour</a>
-              <a class="dropdown-item" href="/schedule-summer-band">Colts Summer Band</a>
+              <a class="dropdown-item" href="#">Colts Summer Band</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="quicklinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quicklinks</a>
             <div class="dropdown-menu" aria-labelledby="quicklinksDropdown">
-              <a class="dropdown-item" href="/signupform">Email Signup</a>
               <a class="dropdown-item" href="https://store.colts.org/collections/tickets">Tickets</a>
               <a class="dropdown-item" href="/inforequest">Request Information</a>
               <a class="dropdown-item" href="/rsvp">Camp RSVP</a>
               <a class="dropdown-item" href="/memberdocuments">Member Documents</a>
-              <a class="dropdown-item" href="/policies">Policies & Procedures</a>
               <a class="dropdown-item" href="/about-volunteer">Volunteer</a>
               <a class="dropdown-item" href="https://store.colts.org/collections/member-payments">Pay Fees</a>
-              <a class="dropdown-item" href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=0560068447&from=lnrlink" target="_blank">Book A Hotel</a>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://store.colts.org">Store</a>
+            <a class="nav-link" href="https://store.colts.org" target="_blank">Store</a>
           </li>
           <li class="nav-item" id="donateBtn">
-            <a class="nav-link" href="https://store.colts.org/collections/donations">Donate</a>
+            <a class="nav-link" href="/give">Donate</a>
           </li>
         </ul>
     </div>
@@ -172,15 +167,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <main>
-    <div class="container-fluid px-0">
-        <div class="row pt-3 pl-md-5 no-gutters">
-            <div class="col-xs-12">
-                <h1 class="display-4" style="font-family: prohibition; font-style: italic;">THANKS FOR SIGNING UP!</h1>
+    <div class="container-fluid">
+        <div class="row pt-3 px-md-3 px-lg-5">
+            <div class="col-12">
+                <h1 class="display-3 mb-n2">You're in.</h1>
             </div>
         </div>
     
-        <div class="row px-2 px-md-5 no-gutters">
-            <div class="col-xs-12">
+        <div class="row py-3 px-md-3 px-lg-5">
+            <div class="col-12">
                 
                 <p class="lead">Thank you for signing up for the Colts Red Zone! <strong style="font-weight: 600;">To complete your enrollment, please <a href="https://store.colts.org/collections/colts-red-zone-enrollment" target="_blank">visit the Colts Mall</a> to submit your payment.</strong></p>
                 <p>Upon purchase, you will be emailed a receipt which includes a link to download our packet and instructions to enroll in Soundslice are on the last page. The link to download the packet will be valid for 7 days after your purchase.</p>
