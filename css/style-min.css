@@ -352,6 +352,17 @@ li {
     margin-bottom: 0;
 }
 
+.show-location {
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.lineup-list {
+    list-style: none;
+    padding: 0;
+    margin-top: .5rem;
+}
+
 .news-byline {
     margin: 0;
     font-weight: 400;
