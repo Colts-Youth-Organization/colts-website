@@ -323,11 +323,15 @@ li {
 
 .news-entry-link {
     color: #1a1a1a;
-  }
+}
 
 .news-entry-link:hover {
     color: #1a1a1a;
     text-decoration: none;
+}
+
+.news-entry-link .card-body p {
+    font-weight: initial;
 }
 
 .card {
