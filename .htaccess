@@ -1,3 +1,4 @@
+# Allow link to leave off ".html"
 Options +FollowSymlinks
 RewriteEngine On
 RewriteBase /
@@ -7,7 +8,10 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ /$1.html [L,QSA]
 
 # Error Code Handling
-ErrorDocument 404 /error.html
+ErrorDocument 404 /error
 
-# Redirect Red Zone vanity URL
-Redirect 301 /redzone /program-red-zone.html
+# Vanity URLs
+Redirect 301 /redzone /program-red-zone
+
+# Converting underscores to hyphens
+Redirect 301 /alumniform /alumni-form
