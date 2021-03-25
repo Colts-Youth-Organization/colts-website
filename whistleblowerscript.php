@@ -4,7 +4,7 @@ $message=$_POST['message'];
 $email=$_POST['email'];
 
 if ($email != "") {
-    readfile("whistleblower_error.html");
+    readfile("whistleblower-error.html");
 } else {
     $to="whistleblower@colts.org, jeff@colts.org, jafjohns@indiana.edu, wlhowes@mchsi.com, bsmith@yousq.net, mpkelley@gmail.com, eelmshaeuser@gmail.com, cathiroberts.omaha@gmail.com, coltswhistleblower@gmail.com, aidan@colts.org";
 
@@ -13,6 +13,6 @@ if ($email != "") {
 
     mail ( $to, $subject, $body );
 
-    readfile("whistleblower_submission.html");
+    readfile("whistleblower-submission.html");
 }
 ?>

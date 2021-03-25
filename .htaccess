@@ -14,4 +14,25 @@ ErrorDocument 404 /error
 Redirect 301 /redzone /program-red-zone
 
 # Converting underscores to hyphens
-Redirect 301 /alumniform /alumni-form
+RedirectMatch 301 /alumniform(\.html)?$                     /alumni-form
+RedirectMatch 301 /alumniform_submission(\.html)?$          /alumni-form-submission
+RedirectMatch 301 /brassimpact_kc(\.html)?$                 /brass-impact
+RedirectMatch 301 /celebration_dm(\.html)?$                 /celebration-in-brass
+RedirectMatch 301 /dalzell_dbq(\.html)?$                    /music-on-the-march
+RedirectMatch 301 /inforequest_submission(\.html)?$         /info-request-submission
+RedirectMatch 301 /inforequest(\.html)?$                    /info-request
+RedirectMatch 301 /memberapp-submission(\.html)?$           /member-application-submission
+RedirectMatch 301 /memberapp(\.html)?$                      /member-application
+RedirectMatch 301 /memberdocuments(\.html)?$                /member-documents
+RedirectMatch 301 /monthlygivingform_submission(\.html)?$   /monthly-giving-form-submission
+RedirectMatch 301 /monthlygivingform(\.html)?$              /monthly-giving-form
+RedirectMatch 301 /signup_submission(\.html)?$              /email-signup-submission
+RedirectMatch 301 /signupform(\.html)?$                     /email-signup
+RedirectMatch 301 /summer-band-sign-up(\.html)?$            /summer-band-signup
+RedirectMatch 301 /summer-pans-sign-up(\.html)?$            /summer-pans-signup
+RedirectMatch 301 /summerpremiere(\.html)?$                 /summer-premiere
+RedirectMatch 301 /tournament_cr(\.html)?$                  /tournament-of-drums
+RedirectMatch 301 /whistleblower_submission(\.html)?$       /whistleblower-submission
+
+# News articles
+
