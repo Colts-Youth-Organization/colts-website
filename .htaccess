@@ -11,7 +11,8 @@ RewriteRule ^(.+)$ /$1.html [L,QSA]
 ErrorDocument 404 /error
 
 # Vanity URLs
-Redirect 301 /redzone /program-red-zone
+Redirect 301 /redzone                                       /program-red-zone
+Redirect 301 /board-zoom                                    https://zoom.us/j/504075785?pwd=M1Zxb3BXUi9hSFZSdFVJYlNLa1E1dz09
 
 # Converting underscores to hyphens
 RedirectMatch 301 /alumniform(\.html)?$                     /alumni-form
