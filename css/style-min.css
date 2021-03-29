@@ -40,14 +40,18 @@ body {
 a {
     color: #cd3232;
     font-weight: 600;
+    text-decoration: initial;
 }
 
-p a:hover, ol a:hover, ul a:hover {
+p a:hover, ol a:hover, ul a:hover, address a:hover{
     color: #cd3232;
+    text-decoration: underline;
 }
+
 
 hr {
     border: 1px solid #cd3232;
+    opacity: 100%;
 }
 
 li {
@@ -83,7 +87,6 @@ li {
 .right-round-photo-container {
     max-height: 25rem;
     height: auto;
-    width: 90%;
     overflow: hidden;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -286,13 +289,13 @@ li {
     margin-right: 10px;
 }
 
-.bio-name {
+#bio-name {
     font-size: 2rem;
     line-height: .9;
     margin-bottom: 0;
 }
 
-.bio-position {
+#bio-position {
     font-family: urw-din-condensed, sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -323,6 +326,7 @@ li {
 
 .news-entry-link {
     color: #1a1a1a;
+    text-decoration: none;
 }
 
 .news-entry-link:hover {

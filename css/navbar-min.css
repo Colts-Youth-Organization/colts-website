@@ -16,6 +16,10 @@ nav a {
   font-weight: 500;
 }
 
+nav a:hover {
+  text-decoration: none;
+}
+
 #organization-nav {
   z-index: 100;
 }

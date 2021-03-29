@@ -14,7 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-NPBD2GS');</script>
 
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
 <!-- Adobe Fonts -->
 <link rel="stylesheet" href="https://use.typekit.net/ygh5syq.css">
@@ -60,6 +61,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!-- Organization Nav  -->
 <nav class="navbar navbar-expand-md" id="organization-nav">
+  <div class="container-fluid px-0">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbars">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -70,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a class="nav-link" href="/join">Join!</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown" aria-expanded="false">About</a>
             <div class="dropdown-menu" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="/about-general">Colts Youth Organization</a>
               <a class="dropdown-item" href="/about-history">History</a>
@@ -79,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="programDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Programs</a>
+            <a class="nav-link dropdown-toggle" href="#" id="programDropdown" data-bs-toggle="dropdown" aria-expanded="false">Programs</a>
             <div class="dropdown-menu" aria-labelledby="programDropdown">
               <a class="dropdown-item" href="/program-colts">Colts</a>
               <a class="dropdown-item" href="/program-cadets">Colt Cadets</a>
@@ -88,7 +90,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">People</a>
+            <a class="nav-link dropdown-toggle" href="#" id="peopleDropdown" data-bs-toggle="dropdown" aria-expanded="false">People</a>
             <div class="dropdown-menu" aria-labelledby="peopleDropdown">
               <a class="dropdown-item" href="/people-staff-admin">Administrative Staff</a>
               <a class="dropdown-item" href="/people-staff-colts">Colts Staff</a>
@@ -98,7 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumni</a>
+            <a class="nav-link dropdown-toggle" href="#" id="alumniDropdown" data-bs-toggle="dropdown" aria-expanded="false">Alumni</a>
             <div class="dropdown-menu" aria-labelledby="alumniDropdown">
               <a class="dropdown-item" href="/alumni-about">Alumni Association</a>
               <a class="dropdown-item" href="/alumni-events">Events</a>
@@ -109,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/"><img src="/img/colts_triangle_logo.svg" id="navbar-logo"/></a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="schedulesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Schedules</a>
+            <a class="nav-link dropdown-toggle" href="#" id="schedulesDropdown" data-bs-toggle="dropdown" aria-expanded="false">Schedules</a>
             <div class="dropdown-menu" aria-labelledby="schedulesDropdown">
               <a class="dropdown-item" href="/schedule-tour-events">Tour Events</a>
               <a class="dropdown-item" href="/schedule-preseason">Colts Preseason</a>
@@ -121,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="quicklinksDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quicklinks</a>
+            <a class="nav-link dropdown-toggle" href="#" id="quicklinksDropdown" data-bs-toggle="dropdown" aria-expanded="false">Quicklinks</a>
             <div class="dropdown-menu" aria-labelledby="quicklinksDropdown">
               <a class="dropdown-item" href="https://store.colts.org/collections/tickets">Tickets</a>
               <a class="dropdown-item" href="/info-request">Request Information</a>
@@ -142,6 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </li>
         </ul>
     </div>
+  </div>
 </nav>
 
 <main>
@@ -152,52 +155,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <p>Please fill out this application completely, then press SUBMIT! <strong>Use uppercase and lowercase letters.</strong> You <strong>do not</strong> need to print this out and mail it in. If any of your information changes, simply submit another application and your information will be updated in our database.</p>
             </div>
         </div>
-        <div class="row py-3 px-md-3 px-lg-5">
-            <div class="col-12">
+        <div class="row pb-3 px-md-3 px-lg-5">
+            <div class="col-lg-10 col-xl-8">
                 <form role="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                     <input type=hidden name='captcha_settings' value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}'>
                     <input type=hidden name="oid" value="00D36000000ox9v">
                     <input type=hidden name="retURL" value="https://colts.org/member-application-submission">
                     <hr>
+                    <p class="text-muted">(* = required)</p>
                     <h2>Personal Information</h2>
-                    <div class="form-row">
+                    <div class="row">
                         <!-- FIRST NAME -->
-                        <div class="form-group col-md-6">
-                            <label for="first_name">First Name</label>
-                            <input  id="first_name" maxlength="80" name="first_name" size="20" type="text" required="true" class="form-control"/>
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="first_name">First Name *</label>
+                            <input  id="first_name" maxlength="80" name="first_name" size="20" type="text" required class="form-control"/>
                         </div>
 
                         <!-- LAST NAME -->
-                        <div class="form-group col-md-6">
-                            <label for="last_name" class="control-label">Last Name</label>
-                            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" class="form-control"/>
+                        <div class="form-group mb-2 col-md-6">
+                            <label for="last_name" class="control-label">Last Name *</label>
+                            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required class="form-control"/>
                         </div>
                     </div>
 
                     <!-- BIRTHDATE -->
-                    <div class="form-group">
-                        <label for="birthdate" class="control-label">Birthdate</label>
-                        <input  id="birthdate" name="00N3600000RuGpw" size="20" required="true" class="form-control" placeholder="mm/dd/yyyy"/></span>
+                    <div class="form-group mb-2">
+                        <label for="birthdate" class="control-label">Birthdate *</label>
+                        <input  id="birthdate" name="00N3600000RuGpw" size="20" required class="form-control" placeholder="mm/dd/yyyy"/></span>
                     </div>
 
                     <!-- EMAIL -->
-                    <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
-                        <input  id="email" maxlength="80" name="email" size="20" type="email" required="true" class="form-control" placeholder="name@example.com"/>
+                    <div class="form-group mb-2">
+                        <label for="email" class="control-label">Email *</label>
+                        <input  id="email" maxlength="80" name="email" size="20" type="email" required class="form-control" placeholder="name@example.com"/>
                     </div>
 
                     <!-- MOBILE -->
-                    <div class="form-group">
-                        <label for="mobile" class="control-label">Cell Phone</label>
-                        <input  id="mobile" maxlength="40" name="mobile" size="20" type="tel" required="true" class="form-control" placeholder="555-555-5555"/>
+                    <div class="form-group mb-2">
+                        <label for="mobile" class="control-label">Cell Phone *</label>
+                        <input  id="mobile" maxlength="40" name="mobile" size="20" type="tel" required class="form-control" placeholder="555-555-5555"/>
                     </div>
 
                     <hr>
 
                     <!-- CORPS -->
-                    <div class="form-group">
-                        <label for="00N3600000RuGrT" class="control-label">Which corps are you interested in?</label>
-                        <select  id="00N3600000RuGrT" class="form-control" name="00N3600000RuGrT" title="Which corps are you interested in?" required="true">
+                    <div class="form-group mb-2">
+                        <label for="00N3600000RuGrT" class="control-label">Which corps are you interested in? *</label>
+                        <select  id="00N3600000RuGrT" class="form-select" name="00N3600000RuGrT" title="Which corps are you interested in?" required>
                             <option value="" selected disabled>Choose...</option>
                             <option value="Colts">Colts</option>
                             <option value="Colt Cadets">Colt Cadets</option>
@@ -206,9 +210,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- SECTION -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000RuGrJ" class="control-label">Which section are you interested in?</label>
-                        <select  id="00N3600000RuGrJ" class="form-control" name="00N3600000RuGrJ" title="Which section are you interested in?">
+                        <select  id="00N3600000RuGrJ" class="form-select" name="00N3600000RuGrJ" title="Which section are you interested in?">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Brass">Brass</option>
                             <option value="Percussion">Percussion</option>
@@ -218,9 +222,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- INSTRUMENT / EQUIPMENT -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbFHY" class="control-label">What instrument or equipment?</label>
-                        <select  id="00N3600000SbFHY" class="form-control" name="00N3600000SbFHY" title="What instrument or equipment?">
+                        <select  id="00N3600000SbFHY" class="form-select" name="00N3600000SbFHY" title="What instrument or equipment?">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Trumpet">Trumpet</option>
                             <option value="Mellophone">Mellophone</option>
@@ -241,53 +245,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <h2>Primary Address</h2>
                     <!-- ADDRESS TYPE -->
-                    <div class="form-group d-none">
+                    <div class="form-group mb-2 d-none">
                         <label for="00N3600000SbnpQ" class="control-label">Primary Address Type</label>
-                        <select  id="00N3600000SbnpQ" name="00N3600000SbnpQ" title="Primary Mailing Address Type" class="form-control">
+                        <select  id="00N3600000SbnpQ" name="00N3600000SbnpQ" title="Primary Mailing Address Type" class="form-select">
                             <option value="Home">Home</option>
                         </select>
                     </div>
 
                     <!-- STREET -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="street" class="control-label">Street Address</label>
                         <input  id="street" maxlength="40" name="street" size="20" type="text" class="form-control"/>
                     </div>
                     
-                    <div class="form-row">
+                    <div class="row">
                         <!-- CITY -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="city" class="control-label">City</label>
                             <input  id="city" maxlength="40" name="city" size="20" type="text" class="form-control"/>
                         </div>
                         
                         <!-- STATE -->
-                        <div class="form-group col-md-3">
+                        <div class="form-group mb-2 col-md-3">
                             <label for="state" class="control-label">State / Province</label>
-                            <input  id="state" maxlength="20" name="state" size="20" type="text" class="form-control"/>
+                            <input  id="state" maxlength="20" name="state" size="20" type="text" class="form-control" aria-describedby="stateHelpBlock"/>
                             <small id="stateHelpBlock" class="form-text text-muted">Please enter the two letter postal abbreviation (e.g. AK, MS, etc.)</small>
                         </div>
                         
                         <!-- ZIP -->
-                        <div class="form-group col-md-3">
+                        <div class="form-group mb-2 col-md-3">
                             <label for="zip" class="control-label">Zip / Postal Code</label>
                             <input  id="zip" maxlength="20" name="zip" size="20" type="text" class="form-control"/>
                         </div>
                     </div>
 
                     <!-- HOME PHONE -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="homephone" class="control-label">Home Phone</label>
-                        <input  id="homephone" maxlength="40" name="homephone" size="20" type="tel" required="true" class="form-control" placeholder="555-555-5555"/>
+                        <input  id="homephone" maxlength="40" name="homephone" size="20" type="tel" class="form-control" placeholder="555-555-5555"/>
                     </div>
 
                     <hr>
 
                     <h2>Secondary Address</h2>
                     <!-- SECONDARY ADDRESS TYPE -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbnpQ" class="control-label">Address Type</label>
-                        <select  id="00N3600000SboiB" name="00N3600000SboiB" title="Secondary Mailing Address Type" class="form-control">
+                        <select  id="00N3600000SboiB" name="00N3600000SboiB" title="Secondary Mailing Address Type" class="form-select">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Home">Home</option>
                             <option value="College">College</option>
@@ -298,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- COLLEGE ADDRESS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbouW" class="control-label">Address</label>
                         <textarea  id="00N3600000SbouW" name="00N3600000SbouW" type="text" wrap="soft" class="form-control"></textarea>
                     </div>
@@ -308,68 +312,68 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2>Parent Information</h2>
 
                     <!-- PARENT 1.1 -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL5U" class="control-label">Father/Parent/Guardian Name</label>
                         <input  id="00N3600000SbL5U" name="00N3600000SbL5U" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
 
-                    <div class="form-row">
+                    <div class="row">
                         <!-- PARENT 1.2 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL5Z" class="control-label">Father/Parent/Guardian Email</label>
                             <input  id="00N3600000SbL5Z" name="00N3600000SbL5Z" maxlength="80" size="20" type="email" class="form-control"/>
                         </div>
 
                         <!-- PARENT 1.3 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL5e" class="control-label">Father/Parent/Guardian Cell Phone</label>
                             <input  id="00N3600000SbL5e" name="00N3600000SbL5e" maxlength="40" size="20" type="tel" class="form-control"/>
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="row">
                         <!-- PARENT 1.4 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL5j" class="control-label">Father/Parent/Guardian Occupation</label>
                             <input  id="00N3600000SbL5j" name="00N3600000SbL5j" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
                         
                         <!-- PARENT 1.5 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL5o" class="control-label">Father/Parent/Guardian Employer</label>
                             <input  id="00N3600000SbL5o" name="00N3600000SbL5o" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
                     </div>
 
                     <!-- PARENT 2.1 -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label class="control-label">Mother/Parent/Guardian Name</label>
                         <input  id="00N3600000SbL5t" name="00N3600000SbL5t" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
 
-                    <div class="form-row">
+                    <div class="row">
                         <!-- PARENT 2.2 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL5y" class="control-label">Mother/Parent/Guardian Email</label>
                             <input  id="00N3600000SbL5y" name="00N3600000SbL5y" maxlength="80" size="20" type="email" class="form-control"/>
                         </div>
 
                         <!-- PARENT 2.3 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL68" class="control-label">Mother/Parent/Guardian Cell Phone</label>
                             <input  id="00N3600000SbL68" name="00N3600000SbL68" maxlength="40" size="20" type="tel" class="form-control"/>
                         </div>
                     </div>
 
-                    <div class="form-row">
+                    <div class="row">
                         <!-- PARENT 2.4 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL6D" class="control-label">Mother/Parent/Guardian Occupation</label>
                             <input  id="00N3600000SbL6D" name="00N3600000SbL6D" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
                         
                         <!-- PARENT 2.5 -->
-                        <div class="form-group col-md-6">
+                        <div class="form-group mb-2 col-md-6">
                             <label for="00N3600000SbL6I" class="control-label">Mother/Parent/Guardian Employer</label>
                             <input  id="00N3600000SbL6I" name="00N3600000SbL6I" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
@@ -380,22 +384,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2>School Information (for DCI Age Audit)</h2>
 
                     <!-- HIGH SCHOOL -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6N" class="control-label">High School Name</label>
                         <input  id="00N3600000SbL6N" name="00N3600000SbL6N" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
 
-                    <div class="form-row">
+                    <div class="row">
                         <!-- HIGH SCHOOL CITY -->
-                        <div class="form-group col-sm-8">
+                        <div class="form-group mb-2 col-sm-8">
                             <label for="00N3600000SbL6S" class="control-label">City</label>
                             <input  id="00N3600000SbL6S" name="00N3600000SbL6S" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
 
                         <!-- HIGH SCHOOL STATE -->
-                        <div class="form-group col-sm-4">
+                        <div class="form-group mb-2 col-sm-4">
                             <label for="00N3600000SbL6X" class="control-label">State</label>
-                            <select  id="00N3600000SbL6X" name="00N3600000SbL6X" title="High school state" class="form-control">
+                            <select  id="00N3600000SbL6X" name="00N3600000SbL6X" title="High school state" class="form-select">
                                 <option value="" selected disabled>Choose...</option>
                                 <option value="AK">AK</option>
                                 <option value="AL">AL</option>
@@ -452,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- GRADUATION -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6c" class="control-label">Year Of Graduation</label>
                         <input  id="00N3600000SbL6c" name="00N3600000SbL6c" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
@@ -460,25 +464,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <hr>
 
                     <!-- CURRENT SCHOOL -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6h" class="control-label">Current School</label>
                         <input  id="00N3600000SbL6h" name="00N3600000SbL6h" maxlength="50" size="20" type="text" class="form-control"/>
                     </div>
 
                     <!-- CURRENT BAND DIRECTOR -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6m" class="control-label">Current Band Director</label>
                         <input  id="00N3600000SbL6m" name="00N3600000SbL6m" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
 
                     <!-- INSTRUMENTS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6r" class="control-label">Instrument(s) You Play</label>
                         <input  id="00N3600000SbL6r" name="00N3600000SbL6r" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
 
                     <!-- COLLEGE MAJOR -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000T4Sle" class="control-label">If you are in college, what is your major or primary area of study?</label>
                         <input  id="00N3600000T4Sle" name="00N3600000T4Sle" maxlength="25" size="20" type="text" class="form-control"/>
                     </div>
@@ -488,42 +492,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2>Prior Experience</h2>
 
                     <!-- PRIOR CORPS REHEARSAL -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL6w" class="control-label">Have you ever participated in a REHEARSAL or EXPERIENCE CAMP of another drum corps? If yes, which drum corps and when?</label>
                         <textarea  id="00N3600000SbL6w" name="00N3600000SbL6w" type="text" wrap="soft" maxlength="250" class="form-control"></textarea>
                     </div>
                     
                     <!-- PRIOR CORPS MEMBER -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL71" class="control-label">Have you ever been a MEMBER of another drum corps? If yes, which drum corps and when?</label>
                         <textarea  id="00N3600000SbL71" name="00N3600000SbL71" type="text" wrap="soft" maxlength="250" class="form-control"></textarea>
                     </div>
                     
                     <!-- PRIOR CORPS FINANCIALS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL76" class="control-label">Do you have any outstanding financial obligations to another drum corps? If yes, which drum corps and when?</label>
                         <textarea  id="00N3600000SbL76" name="00N3600000SbL76" type="text" wrap="soft" maxlength="250" class="form-control"></textarea>
                     </div>
 
                     <!-- PRIOR MARCHING EXPERIENCE -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000RuGrd" class="control-label">Please list any prior marching experience (e.g. high school, college, drum corps, WGI, etc.)</label>
                         <textarea  id="00N3600000RuGrd" class="form-control" name="00N3600000RuGrd" type="text" wrap="soft" maxlength="250"></textarea>
                     </div>
 
                     <hr>
 
-                    <div class="form-row">
+                    <div class="row">
                     <!-- SHOE SIZE -->
-                        <div class="form-group col-md-4">
+                        <div class="form-group mb-2 col-md-4">
                             <label class="control-label">Shoe Size (Indicate Men's or Women's)</label>
                             <input  id="00N3600000SbL7B" name="00N3600000SbL7B" maxlength="25" size="20" type="text" class="form-control"/>
                         </div>
                         
                         <!-- SHIRT SIZE -->
-                        <div class="form-group col-md-4">
+                        <div class="form-group mb-2 col-md-4">
                             <label for="00N3600000SbL7G" class="control-label">T-Shirt Size</label>
-                            <select  id="00N3600000SbL7G" name="00N3600000SbL7G" title="T-Shirt Size" class="form-control">
+                            <select  id="00N3600000SbL7G" name="00N3600000SbL7G" title="T-Shirt Size" class="form-select">
                                 <option value="" selected disabled>Choose...</option>
                                 <option value="S">S</option>
                                 <option value="M">M</option>
@@ -535,9 +539,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         
                         <!-- GLOVE SIZE -->
-                        <div class="form-group col-md-4">
+                        <div class="form-group mb-2 col-md-4">
                             <label for="00N3600000Sw4ul" class="control-label">Glove Size</label>
-                            <select  id="00N3600000Sw4ul" name="00N3600000Sw4ul" title="Glove Size" class="form-control">
+                            <select  id="00N3600000Sw4ul" name="00N3600000Sw4ul" title="Glove Size" class="form-select">
                                 <option value="" selected disabled>Choose...</option>
                                 <option value="XS">XS</option>
                                 <option value="S">S</option>
@@ -549,15 +553,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- DIETARY NEEDS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL7V" class="control-label">Do you have any special dietary needs or food allergies? (e.g. vegetarian, gluten free, lactose intolerant, etc.) <i>Please only fill out if you have dietary needs or food allergies. Otherwise, leave blank.</i></label>
                         <textarea  id="00N3600000SbL7V" name="00N3600000SbL7V" type="text" wrap="soft" maxlength="250" class="form-control"></textarea>
                     </div>
                     
                     <!-- SUMMER CONFLICTS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL7L" class="control-label">The Colts season runs from 5/19 - 8/10 and the Colt Cadets season from 6/8 - 8/10. Do you forsee any conflicts in your summer schedule?</label>
-                        <select  id="00N3600000SbL7L" name="00N3600000SbL7L" title="Summer Conflicts" class="form-control">
+                        <select  id="00N3600000SbL7L" name="00N3600000SbL7L" title="Summer Conflicts" class="form-select">
                             <option value="" selected disabled>Choose...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -565,19 +569,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     
                     <!-- SUMMER CONFLICTS REASONS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000SbL7Q" class="control-label">If yes, please explain</label>
                         <textarea  id="00N3600000SbL7Q" name="00N3600000SbL7Q" type="text" wrap="soft" maxlength="250" class="form-control"></textarea>
                     </div>
 
                     <!-- OTHER COMMENTS -->
-                    <div class="form-group">
+                    <div class="form-group mb-2">
                         <label for="00N3600000RuGri" class="control-label">Other Comments</label>
                         <textarea  id="00N3600000RuGri" class="form-control" name="00N3600000RuGri" type="text" wrap="soft" maxlength="250"></textarea>
                     </div>
 
                     <!-- CONSTITUENCY -->
-                    <div class="form-group d-none">
+                    <div class="form-group mb-2 d-none">
                         <label for="00N3600000RuTCa" class="control-label">Interested In 2021</label>
                         <select  id="00N3600000RuTCa" name="00N3600000RuTCa" title="Constituency">
                             <option value="Membership">Interested In 2021</option>
@@ -585,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- MEMBER APPLICATION -->
-                    <div class="form-group d-none">
+                    <div class="form-group mb-2 d-none">
                         <label for="00N3600000TTXwS" class="control-label">Member Application</label>
                         <select  id="00N3600000TTXwS" name="00N3600000TTXwS" title="Current Year Member App">
                             <option value="Yes">Yes</option>
@@ -593,7 +597,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
 
                     <!-- FORM SUBMITTED -->
-                    <div class="form-group d-none">
+                    <div class="form-group mb-2 d-none">
                         <label for="00N3600000ScCp5" class="control-label">Form Submitted</label>
                         <select  id="00N3600000ScCp5" name="00N3600000ScCp5" title="Form Submitted">
                             <option value="Member Application">Member Application</option>
@@ -609,67 +613,130 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </main>
 <footer class="footer">
 <div class="container-fluid">
-  <div class="row d-none d-lg-block sponsor-div" id="sponsorsDiv4">
-    <div id="sponsorCarousel4" class="carousel slide w-100" data-ride="carousel">
+  <div class="row d-none d-lg-block sponsor-div" id="sponsorsDiv5">
+    <div id="sponsorCarousel5" class="carousel slide w-100" data-bs-ride="carousel" data-bs-touch="false">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="row">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row g-5">
             <div class="col">
-              <a href="https://www.yamaha.com/band" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
+              <a href="https://www.yamaha.com/band" target="_blank" rel="noopener" title="Yamaha"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://iowaculture.gov/arts" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
+              <a href="https://iowaculture.gov/arts" target="_blank" rel="noopener" title="Iowa Arts Council"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.dradubuque.com/" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
+              <a href="https://www.dradubuque.com/" target="_blank" rel="noopener" title="Dubuque Racing Association"><img src="/img/logos/DRA.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.fruhauf.com/" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
+              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank" rel="noopener" title="City of Dubuque Arts & Culture"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.innovativepercussion.com/" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.sabian.com/" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://ultimatedrillbook.com/" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
+              <a href="https://www.fruhauf.com/" target="_blank" rel="noopener" title="Fruhauf"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="row">
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row g-5">
             <div class="col">
-              <a href="https://www.remo.com/" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
+              <a href="https://www.innovativepercussion.com/" target="_blank" rel="noopener" title="Innovative Percussion"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.on2percussion.com/" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
+              <a href="https://www.sabian.com/" target="_blank" rel="noopener" title="Sabian"><img src="/img/logos/Sabian.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="http://pageantryinnovations.com/" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
+              <a href="https://ultimatedrillbook.com/" target="_blank" rel="noopener" title="Ultimate Drill Book"><img src="/img/logos/UDB.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.treeworkschimes.com/" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
+              <a href="https://www.remo.com/" target="_blank" rel="noopener" title="Remo"><img src="/img/logos/Remo.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.on2percussion.com/" target="_blank" rel="noopener" title="ON2 Percussion"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="row">
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row g-5">
             <div class="col">
-              <a href="https://msconcepts.com/" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
+              <a href="http://pageantryinnovations.com/" target="_blank" rel="noopener" title="Pageantry Innovations"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
+              <a href="https://www.treeworkschimes.com/" target="_blank" rel="noopener" title="Treeworks Chimes"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://lifelineaudiovideo.com" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
+              <a href="https://msconcepts.com/" target="_blank" rel="noopener" title="Marching Show Concepts"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank" rel="noopener" title="Hampton Inn Dubuque"><img src="/img/logos/Hampton.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://lifelineaudiovideo.com" target="_blank" rel="noopener" title="Lifeline Audio Video Technologies"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row d-none d-md-block d-lg-none sponsor-div" id="sponsorsDiv4">
+    <div id="sponsorCarousel4" class="carousel slide w-100" data-bs-ride="carousel" data-bs-touch="false">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div class="row g-3">
+            <div class="col">
+              <a href="https://www.yamaha.com/band" target="_blank" rel="noopener" title="Yamaha"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://iowaculture.gov/arts" target="_blank" rel="noopener" title="Iowa Arts Council"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.dradubuque.com/" target="_blank" rel="noopener" title="Dubuque Racing Association"><img src="/img/logos/DRA.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank" rel="noopener" title="City of Dubuque Arts & Culture"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row g-3">
+            <div class="col">
+              <a href="https://www.fruhauf.com/" target="_blank" rel="noopener" title="Fruhauf"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.innovativepercussion.com/" target="_blank" rel="noopener" title="Innovative Percussion"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.sabian.com/" target="_blank" rel="noopener" title="Sabian"><img src="/img/logos/Sabian.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://ultimatedrillbook.com/" target="_blank" rel="noopener" title="Ultimate Drill Book"><img src="/img/logos/UDB.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row g-3">
+            <div class="col">
+              <a href="https://www.remo.com/" target="_blank" title="Remo"><img src="/img/logos/Remo.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.on2percussion.com/" target="_blank" rel="noopener" title="ON2 Percussion"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="http://pageantryinnovations.com/" target="_blank" rel="noopener" title="Pageantry Innovations"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://www.treeworkschimes.com/" target="_blank" rel="noopener" title="Treeworks Chimes"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <div class="row g-3">
+            <div class="col">
+              <a href="https://msconcepts.com/" target="_blank" rel="noopener" title="Marching Show Concepts"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank" rel="noopener" title="Hampton Inn Dubuque"><img src="/img/logos/Hampton.svg" class="sponsor-svg" alt="" /></a>
+            </div>
+            <div class="col">
+              <a href="https://lifelineaudiovideo.com" target="_blank" rel="noopener" title="Lifeline Audio Video Technologies"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col"></div>
           </div>
@@ -677,175 +744,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </div>
-  <div class="row d-none d-md-block d-lg-none sponsor-div" id="sponsorsDiv3">
-    <div id="sponsorCarousel3" class="carousel slide w-100" data-ride="carousel">
+  <div class="row d-md-none sponsor-div" id="sponsorsDiv3">
+    <div id="sponsorCarousel3" class="carousel slide w-100" data-bs-ride="carousel" data-bs-touch="false">
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="5000">
           <div class="row">
             <div class="col">
-              <a href="https://www.yamaha.com/band" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
+              <a href="https://www.yamaha.com/band" target="_blank" rel="noopener" title="Yamaha"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://iowaculture.gov/arts" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
+              <a href="https://iowaculture.gov/arts" target="_blank" rel="noopener" title="Iowa Arts Council"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.dradubuque.com/" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
+              <a href="https://www.dradubuque.com/" target="_blank" rel="noopener" title="Dubuque Racing Association"><img src="/img/logos/DRA.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row">
             <div class="col">
-              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
+              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank" rel="noopener" title="City of Dubuque Arts & Culture"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.fruhauf.com/" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
+              <a href="https://www.fruhauf.com/" target="_blank" rel="noopener" title="Fruhauf"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.innovativepercussion.com/" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
+              <a href="https://www.innovativepercussion.com/" target="_blank" rel="noopener" title="Innovative Percussion"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row">
             <div class="col">
-              <a href="https://www.sabian.com/" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
+              <a href="https://www.sabian.com/" target="_blank" rel="noopener" title="Sabian"><img src="/img/logos/Sabian.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://ultimatedrillbook.com/" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
+              <a href="https://ultimatedrillbook.com/" target="_blank" rel="noopener" title="Ultimate Drill Book"><img src="/img/logos/UDB.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.remo.com/" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
+              <a href="https://www.remo.com/" target="_blank" rel="noopener" title="Remo"><img src="/img/logos/Remo.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row">
             <div class="col">
-              <a href="https://www.on2percussion.com/" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
+              <a href="https://www.on2percussion.com/" target="_blank" rel="noopener" title="ON2 Percussion"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="http://pageantryinnovations.com/" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
+              <a href="http://pageantryinnovations.com/" target="_blank" rel="noopener" title="Pageantry Innovations"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://www.treeworkschimes.com/" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
+              <a href="https://www.treeworkschimes.com/" target="_blank" rel="noopener" title="Treeworks Chimes"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="5000">
           <div class="row">
             <div class="col">
-              <a href="https://msconcepts.com/" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
+              <a href="https://msconcepts.com/" target="_blank" rel="noopener" title="Marching Show Concepts"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
+              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank" rel="noopener" title="Hampton Inn Dubuque"><img src="/img/logos/Hampton.svg" class="sponsor-svg" alt="" /></a>
             </div>
             <div class="col">
-              <a href="https://lifelineaudiovideo.com" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
+              <a href="https://lifelineaudiovideo.com" target="_blank" rel="noopener" title="Lifeline Audio Video Technologies"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" alt="" /></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row d-block d-md-none sponsor-div" id="sponsorsDiv2">
-    <div id="sponsorCarousel2" class="carousel slide w-100" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.yamaha.com/band" target="_blank"><img src="/img/logos/Yamaha.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://iowaculture.gov/arts" target="_blank"><img src="/img/logos/IowaArtsCouncil.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.dradubuque.com/" target="_blank"><img src="/img/logos/DRA.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.cityofdubuque.org/307/Arts-Culture" target="_blank"><img src="/img/logos/CityOfDubuque.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.fruhauf.com/" target="_blank"><img src="/img/logos/Fruhauf.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.innovativepercussion.com/" target="_blank"><img src="/img/logos/InnovativePercussion.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.sabian.com/" target="_blank"><img src="/img/logos/Sabian.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://ultimatedrillbook.com/" target="_blank"><img src="/img/logos/UDB.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://www.remo.com/" target="_blank"><img src="/img/logos/Remo.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.on2percussion.com/" target="_blank"><img src="/img/logos/ON2Percussion.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="http://pageantryinnovations.com/" target="_blank"><img src="/img/logos/PageantryInnovations.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://www.treeworkschimes.com/" target="_blank"><img src="/img/logos/Treeworks.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://msconcepts.com/" target="_blank"><img src="/img/logos/MarchingShowConcepts.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col">
-              <a href="https://secure3.hilton.com/en_US/hp/reservation/book.htm?ctyhocn=DBQIAHX&corporateCode=560068447&from=lnrlink" target="_blank"><img src="/img/logos/Hampton.svg" class="sponsor-svg" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col">
-              <a href="https://lifelineaudiovideo.com" target="_blank"><img src="/img/logos/Lifeline.svg" class="sponsor-svg" /></a>
-            </div>
-            <div class="col"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</div>
+<div class="container-fluid">
   <div class="row py-4 justify-content-center" id="footer-div" >
     <div class="col-xs-12 col-md-4 px-0 pt-2">
       <img src="/img/colts_footer_logo.svg" id="footer-logo" />
       <p class="mt-3">We use music & excellence to teach <br>each other about success in life.</p>
       <ul class="list-inline footer-social pt-2">
-        <li class="list-inline-item"><a href="https://www.facebook.com/dcicolts/" target="_blank" class="facebook"><i class="fa icon-fb-colts"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.facebook.com/coltcadets" target="_blank" class="facebook"><i class="fa icon-fb-cadets"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.facebook.com/ColtsAlumni" target="_blank" class="facebook"><i class="fa icon-fb-alumni"></i></a></li>
-        <li class="list-inline-item"><a href="https://twitter.com/dcicolts" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
-        <li class="list-inline-item"><a href="https://instagram.com/dcicolts" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.snapchat.com/add/dcicolts" target="_blank" class="snapchat"><i class="fab fa-snapchat-ghost"></i></a></li>
-        <li class="list-inline-item"><a href="https://coltscooktruck.blogspot.com/" target="_blank" class="rss"><i class="fa fa-rss-square"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCZ1qNAhVcRr0Zz2gvgdhygQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a></li>
-        <li class="list-inline-item"><a href="https://www.dci.org/corps/colts" target="_blank" class="dci"><i class="fa fa icon-logo_dci"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/dcicolts/" target="_blank" rel="noopener" title="Colts Facebook"><i class="fa icon-fb-colts"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/coltcadets" target="_blank" rel="noopener" title="Colt Cadets Facebook"><i class="fa icon-fb-cadets"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/ColtsAlumni" target="_blank" rel="noopener" title="Alumni Facebook"><i class="fa icon-fb-alumni"></i></a></li>
+        <li class="list-inline-item"><a href="https://twitter.com/dcicolts" target="_blank" rel="noopener" title="Colts Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="https://instagram.com/dcicolts" target="_blank" rel="noopener" title="Colts Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.snapchat.com/add/dcicolts" target="_blank" rel="noopener" title="Colts Snapchat"><i class="fab fa-snapchat-ghost"></i></a></li>
+        <li class="list-inline-item"><a href="https://coltscooktruck.blogspot.com/" target="_blank" rel="noopener" title="Colts Virtual Cooktruck"><i class="fa fa-rss-square"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/user/DubuqueColtsMedia" target="_blank" rel="noopener" title="Colts YouTube"><i class="fab fa-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.dci.org/corps/colts" target="_blank" rel="noopener" title="Drum Corps International"><i class="fa fa icon-logo_dci"></i></a></li>
       </ul>
       <p class="small mt-2 d-none d-md-block">&copy; 2021 Colts Youth Organization. All rights reserved.</p>
     </div>
@@ -877,10 +862,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </footer>
 
 <!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <script>
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);

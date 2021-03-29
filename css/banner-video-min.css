@@ -5,25 +5,14 @@
   overflow: hidden;
 }
 
-.banner-image {
-  margin-top: -9%;
-  margin-bottom: -5%;
+.banner-video {
+  width: 100%;
 }
 
 .banner-text {
   position: absolute;
   top: 20%;
 }
-
-/* .banner-heading {
-  position: absolute;
-  font-family: prohibition;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 20vw;
-  text-align: center;
-  width: 100%;
-} */
 
 .banner-preheading {
   top: 0;
@@ -32,18 +21,6 @@
   -webkit-text-stroke: 0.15vw #fff;
   letter-spacing: 1vw;
 }
-
-/* .banner-heading-stroke {
-  top: 7.4vw;
-  left: 0.3%;
-  color: rgba(0,0,0,0);
-  -webkit-text-stroke: 0.2vw #ed771d;
-}
-
-.banner-heading-fill {
-  top: 7vw;
-  color: #fff;
-} */
 
 .banner-heading {
   position: absolute;
@@ -77,6 +54,15 @@
   color: #fff;
 }
 
+#bannerVideoPause {
+  cursor: pointer;
+  position: absolute;
+  bottom: 1%;
+  right: 0.5%;
+  color: #efefef
+
+}
+
 /* Rules for screen size below 1300px */
 @media only screen and (max-width: 1300px) {
   .banner-video {
@@ -86,6 +72,12 @@
 
 /* Rules for screen size below 768px */
 @media only screen and (max-width: 768px) {
+  .banner-video {
+    transform: translateX(-25%);
+    width: 200%;
+    height: 100%;
+  }
+  
   .banner-heading {
     font-size: 24vw;
   }

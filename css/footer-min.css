@@ -33,7 +33,10 @@
 
 .sponsor-div {
     background-color: #aaa;
-    padding: 0 10%;
+}
+
+.carousel-item {
+    transition: transform 2s ease-in-out;
 }
 
 .footer-heading {
@@ -52,10 +55,12 @@
 
 .footer-quicklinks a {
     color: #ededed;
+    text-decoration: none;
 }
 
 .footer-quicklinks a:hover {
     color: #ededed;
+    text-decoration: underline;
 }
 
 .contact-us-links{
@@ -64,13 +69,15 @@
 
 .contact-us-links a {
     color: #ededed;
+    text-decoration: none;
 }
 
 .contact-us-links a:hover {
     color: #ededed;
+    text-decoration: underline;
 }
 
-address {
+footer address {
     margin-bottom: 0;
 }
 
