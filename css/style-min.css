@@ -95,10 +95,11 @@ li {
 
 .right-round-photo {
     width: 120%;
+    margin-top: -20%;
 }
 
 .left-round-photo-container {
-    max-height: 15rem;
+    max-height: 25rem;
     height: auto;
     width: 90%;
     overflow: hidden;
@@ -118,6 +119,7 @@ li {
 .left-round-photo {
     width: 120%;
     margin-right: -10vw;
+    margin-top: -20%;
 }
 
 .full-width-photo-container {
