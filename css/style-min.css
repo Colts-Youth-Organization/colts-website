@@ -410,8 +410,9 @@ iframe {
     margin-bottom: 1rem;
 }
 
-#yearPageNav a {
-    color: #cd3232;
+
+#newsList a.active {
+    background-color: #cd3232;
 }
 
 
@@ -528,11 +529,19 @@ iframe {
 /* Rules for dark mode */
 
 @media (prefers-color-scheme: dark) {
-    p a, ol a, ul a {
+    p a, ol a, ul a, address a {
         color: #ed771d;
     }
     
-    p a:hover, ol a:hover, ul a:hover {
+    p a:hover, ol a:hover, ul a:hover, address a:hover {
+        color: #ed771d;
+    }
+
+    .accordion .card-header .btn-link {
+        color: #ed771d;
+    }
+    
+    .accordion .card-header .btn-link:hover {
         color: #ed771d;
     }
 
@@ -585,25 +594,32 @@ iframe {
         color: #fff;
     }
 
-    .form-control {
+    .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ddd' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    }
+
+    .form-control, .form-select {
         background-color: #333;
         border: 1px solid #444;
         color: #ddd;
     }
 
-    .form-control:focus {
+    .form-control:focus, .form-select:focus {
         background-color: #333;
         border: 1px solid #777;
         color: #ddd;
     }
 
-    #yearPageNav a {
-        border-color: #555;
-        background-color: #1a1a1a;
-        color: #ed771d;
+    #newsList a {
+        background-color: #333;
+        color: #eee;
     }
 
-    #yearPageNav a:hover {
-        border-color: #ed771d;
+    #newsList a:hover {
+        background-color: #444;
+    }
+
+    #newsList a.active {
+        background-color: #cd3232;
     }
 }

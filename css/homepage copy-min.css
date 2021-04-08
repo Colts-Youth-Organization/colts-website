@@ -6,26 +6,38 @@ h2 {
 #programThumbnailDiv {
     background-color: #cd3232;
     min-height: 200px;
+}
+
+#programThumbnailDiv h2 {
     color: #fff;
 }
 
 .program-thumbnail {
     width: 100%;
-}
-
-.program-thumbnail-img-container {
-
+    height: 220px;
+    border-radius: 15px;
     overflow: hidden;
+    position: relative;
 }
 
 .program-thumbnail-img {
-    width: 100%;
-    height: auto;
+    z-index: 0;
+    position: absolute;
+    left: 5%;
+}
+
+.program-thumbnail-svg {
+    position: absolute;
+    z-index: 1;
+    fill: #ddd;
 }
 
 .program-thumbnail-text {
     color: #000;
+    position: absolute;
     z-index: 3;
+    padding-top: 60px;
+    padding-left: 30px;
     text-align: center;
 }
 
@@ -34,14 +46,15 @@ h2 {
     font-weight: 500;
     font-style: normal;
     line-height: .8;
+    margin-bottom: 0;
 }
 
 .program-thumbnail-description {
     font-family: urw-din-condensed, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2em;
-    line-height: 1;
+    font-size: 1.3em;
+    line-height: .9;
 
 }
 
@@ -63,7 +76,7 @@ h2 {
 }
 
 /* Rules for screen size below 768px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .h2-lead {
         font-size: 3.5rem;
     }
@@ -71,16 +84,15 @@ h2 {
     h2 {
         font-size: 3rem;
     }
-
-
+    .program-thumbnail {
+        width: 20rem;
+        height: 13rem;
+        margin-bottom: 1rem;
+    }
 }
 
 /* Rules for dark mode */
 @media (prefers-color-scheme: dark) {
-    .program-thumbnail {
-        border-color: #1a1a1a;
-    }
-
     .program-thumbnail-text {
         color: #fff;
     }
