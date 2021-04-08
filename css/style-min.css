@@ -410,6 +410,10 @@ iframe {
     margin-bottom: 1rem;
 }
 
+#yearPageNav a {
+    color: #cd3232;
+}
+
 
 /* Rules for screen size below 900px */
 @media only screen and (max-width: 900px) {
@@ -591,5 +595,15 @@ iframe {
         background-color: #333;
         border: 1px solid #777;
         color: #ddd;
+    }
+
+    #yearPageNav a {
+        border-color: #555;
+        background-color: #1a1a1a;
+        color: #ed771d;
+    }
+
+    #yearPageNav a:hover {
+        border-color: #ed771d;
     }
 }

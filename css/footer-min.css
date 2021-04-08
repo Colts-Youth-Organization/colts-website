@@ -81,12 +81,14 @@ footer address {
     margin-bottom: 0;
 }
 
-/* Rules for screen size below 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .footer-social li {
         font-size: 1.2rem;
     }
+}
 
+/* Rules for screen size below 768px */
+@media only screen and (max-width: 768px) {
     #footer-logo {
         margin: auto;
     }
