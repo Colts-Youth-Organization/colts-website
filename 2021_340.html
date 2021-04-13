@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script type="text/javascript" language="JavaScript">
+    NumberOfImagesToRotate = 318;
+
+    FirstPart = '<img src="/img/header/img';
+    LastPart = '.jpg" height="75	" width="150">';
+
+    function printImage() {
+      var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
+      document.write(FirstPart + r + LastPart);
+    }
+    //-->
+  </script>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Colts Youth Organization</title>
+    <title>Colts Youth Organization - News</title>
 
     <link rel="shortcut icon" href="/img/favicon.png" />
 
     <meta name="description" content="" />
+    <meta property="og:url" content="https://colts.org/2021_340" />
+    <meta property="og:title" content="Colts Hall Of Fame Accepting Nominations" />
+    <meta property="og:description" content="Submit your nominations to recognize an instructor, volunteer or alumnus of the organization!" />
+    <meta property="og:image" content="https://colts.org/img/hof_2017.jpg" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@dcicolts" />
+    <meta name="twitter:title" content="Colts Hall Of Fame Accepting Nominations" />
+    <meta name="twitter:description" content="Submit your nominations to recognize an instructor, volunteer or alumnus of the organization!" />
+    <meta name="twitter:image" content="https://colts.org/img/hof_2017.jpg" />
 
     <!-- Google Tag Manager -->
     <script>
@@ -26,12 +49,8 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Adobe Fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/ygh5syq.css" />
-
     <!-- CSS -->
     <link href="/css/preload.css" rel="stylesheet" media="screen" />
-    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen" />
     <link href="/css/font-awesome.min.css" rel="stylesheet" media="screen" />
     <link href="/css/icon_colts.css" rel="stylesheet" media="screen" />
@@ -39,9 +58,10 @@
     <link href="/css/animate.min.css" rel="stylesheet" media="screen" />
     <link href="/css/slidebars.css" rel="stylesheet" media="screen" />
     <link href="/css/lightbox.css" rel="stylesheet" media="screen" />
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
     <link href="/css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen" />
 
-    <link href="/css/style-red.css?update=20210226" rel="stylesheet" media="screen" title="default" />
+    <link href="/css/style-red.css" rel="stylesheet" media="screen" title="default" />
     <link href="/css/width-full.css" rel="stylesheet" media="screen" title="default" />
 
     <link href="/css/buttons.css" rel="stylesheet" media="screen" />
@@ -68,72 +88,58 @@
     <!--#include file="includes/menu.html" -->
     <div id="include-menu"></div>
 
-    <section class="wrap-light-color">
-      <div class="container-fluid" style="padding: 0">
-        <div class="row">
-          <div class="col-xs-12">
-            <div id="homepageBanner">
-              <img src="/img/homepage_brass.png" class="center-block" id="homepageBannerImage" />
-              <div id="homepageBannerText">A community of musicians &amp; artists learning to deliver the performance of&nbsp;a&nbsp;lifetime.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap-light-color">
+    <header class="main-header">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 text-center featured-article">
-            <a href="/2021_340">
-              <img src="/img/news/hof_small.jpeg" width="260" />
-            </a>
-            <a class="feature-icon" href="/2021_340">
-              <h5>Now Accepting Nominations To The Colts Hall Of Fame</h5>
-              <p>April 13, 2021</p>
-              <p>Submit your nominations to recognize an instructor, volunteer or alumnus of the organization!</p>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-3 text-center featured-article">
-            <a href="/2021_339">
-              <img src="/img/leap_of_faith_small.jpg" width="260" />
-            </a>
-            <a class="feature-icon" href="/2021_339">
-              <h5>Colts Present Their 2021 Production — LEAP OF FAITH</h5>
-              <p>April 2, 2021</p>
-              <p>Musical selections include works by Stevie Wonder & Ariana Grande, ABBA, Paul Williams & Kenneth Ascher, and George Michael.</p>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-3 text-center featured-article">
-            <a href="/2021_337">
-              <img src="/img/red_zone_small.png" width="260" />
-            </a>
-            <a class="feature-icon" href="/2021_337">
-              <h5>Colts Release Preseason Preparation Details</h5>
-              <p>March 31, 2021</p>
-              <p>New members are still welcome to join the Colts as they prepare for their 2021 season!</p>
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-3 text-center featured-article">
-            <a href="/2021_338">
-              <img src="/img/news/cc_kann.png" />
-            </a>
-            <a class="feature-icon" href="/2021_338">
-              <h5>Colt Cadets Set Preseason Schedule</h5>
-              <p>March 31, 2021</p>
-              <p>Any interested student age 12-19, with or without experience, can find a home in Colt Cadets without the stress of an audition.</p>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 feature-container text-center">
-            <a href="/news" target="blank"
-              ><font style="font-size: 1.4em; font-weight: 600; font-family: Teko; color: #ed771d">CLICK HERE FOR NEWS ARCHIVES</font></a
-            >
-          </div>
+        <h1 class="page-title pull-left">News</h1>
+        <span class="pull-right hidden-sm hidden-xs">
+          <script type="text/javascript" language="JavaScript">
+            <!--
+            printImage();
+            //-->
+          </script>
+          <script type="text/javascript" language="JavaScript">
+            <!--
+            printImage();
+            //-->
+          </script>
+          <script type="text/javascript" language="JavaScript">
+            <!--
+            printImage();
+            //-->
+          </script>
+        </span>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="section-title no-margin-top">Now Accepting Nominations To The Colts Hall Of Fame</h1>
         </div>
       </div>
-    </section>
+
+      <img src="/img/hof_2017.jpg" height="" width="350" alt="Colts Hall Of Fame Logo" class="alignleft imageborder" />
+
+      <p><i>April 13, 2021</i></p>
+
+      <p>
+        The Colts are now accepting nominations for the Hall Of Fame Class of 2021! Any member of the public may nominate an individual for induction into the
+        Colts Hall of Fame by submitting a letter describing the reasons their nominee should be considered, along with a brief description of the role and
+        history of contributions that person has made to the Colts Youth Organization.
+        <a href="/documents/HOF_Nomination.pdf" target="blank"><strong>Click here to submit a nomination today!</strong></a>
+      </p>
+      <p>
+        The Hall Of Fame was established in 1993 during the 30th anniversary celebration of the Colts. The award is the highest level of recognition given by
+        the organization, and many of the founders of the Colts were the first to be inducted. Throughout the years, the Colts have recognized board members,
+        alumni, volunteers and staff as Hall Of Fame inductees. <a href="/people-hof" target="_blank">Click here</a> to view a full listing of Colts Hall Of
+        Fame members.
+      </p>
+      <p>
+        <i>Return to <a href="/news">Colts News</a></i
+        >.
+      </p>
+    </div>
+
+    <!-- container -->
 
     <!--#include file="includes/footer.html" -->
     <div id="include-footer"></div>
