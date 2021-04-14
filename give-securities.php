@@ -6,7 +6,7 @@ $email=$_POST['email'];
 $phone=$_POST['mobile'];
 if(isset($_POST['checkMoreInfo']))
 {
-    $moreinfo="YES — I have already included the Colts in my estate plans.\n";
+    $moreinfo="YES — I would like more information about transferring securities to the Colts.\n";
 }
 else
 {
@@ -35,13 +35,13 @@ else
 
 $comments=$_POST['message'];
 
-$message="Name: $first $last\nEmail: $email\nPhone: $phone\n$moreinfo $rmd $daf";
+$message="Name: $first $last\nEmail: $email\nPhone: $phone\n$moreinfo $rmd $daf\nOther comments: $comments";
 $to="aidan@colts.org";
 
 $subject="Securities / Foundations Form Submitted";
-$body="MESSAGE - $message\n";
+$body="$message\n";
 
 mail ( $to, $subject, $body );
 
-readfile("whistleblower-submission.html");
+readfile("give-form-submission.html");
 ?>
