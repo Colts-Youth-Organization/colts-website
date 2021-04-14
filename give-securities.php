@@ -36,7 +36,7 @@ else
 $comments=$_POST['message'];
 
 $message="Name: $first $last\nEmail: $email\nPhone: $phone\n$moreinfo $rmd $daf\nOther comments: $comments";
-$to="aidan@colts.org";
+$to="aidan@colts.org, jeff@colts.org";
 
 $subject="Securities / Foundations Form Submitted";
 $body="$message\n";

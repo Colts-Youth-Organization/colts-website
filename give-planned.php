@@ -25,7 +25,7 @@ else
 $comments=$_POST['message'];
 
 $message="Name: $first $last\nEmail: $email\nPhone: $phone\n$alreadyincluded $interested \nOther comments: $comments";
-$to="aidan@colts.org";
+$to="aidan@colts.org, jeff@colts.org";
 
 $subject="Planned Giving Form Submitted";
 $body="$message\n";
