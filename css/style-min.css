@@ -225,6 +225,10 @@ li {
   border-color: #fff;
 }
 
+.staff-photos .card-img {
+  height: auto;
+}
+
 .staff-photos .card:hover {
   border-color: #cd3232;
   transition: all 0.2s;
@@ -569,6 +573,12 @@ iframe {
   ul a:hover,
   address a:hover {
     color: #ed771d;
+  }
+
+  h3 a,
+  h3 a:hover {
+    font-weight: inherit;
+    color: #cd3232;
   }
 
   .accordion .card-header .btn-link {
