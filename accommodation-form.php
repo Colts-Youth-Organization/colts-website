@@ -5,10 +5,10 @@ $email=$_POST['email'];
 $corps=$_POST['corps'];
 $message=$_POST['message'];
 
-$to="aidan@colts.org";
+$to="jeff@colts.org, vicki@colts.org, rich@colts.org";
 
 $subject="Accommodation Request Submission";
-$body="Name: $name\Email: $email\nCorps, group or event: $corps\nMessage: $message\n";
+$body="Name: $name\nEmail: $email\nCorps, group or event: $corps\nMessage: $message\n";
 
 mail ( $to, $subject, $body );
 
