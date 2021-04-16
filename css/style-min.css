@@ -98,7 +98,8 @@ li {
 
 .right-round-photo {
   width: 120%;
-  margin-top: -20%;
+  margin-top: -10%;
+  height: auto;
 }
 
 .left-round-photo-container {
@@ -110,19 +111,11 @@ li {
   border-bottom-right-radius: 1rem;
 }
 
-.left-angle-photo-container {
-  max-height: 15rem;
-  height: auto;
-  width: 90%;
-  overflow: hidden;
-  -webkit-clip-path: polygon(95% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
-  clip-path: polygon(95% 0, 100% 10%, 100% 100%, 0 100%, 0 0);
-}
-
 .left-round-photo {
   width: 120%;
   margin-right: -10vw;
-  margin-top: -20%;
+  margin-top: -5%;
+  height: auto;
 }
 
 .full-width-photo-container {
@@ -232,6 +225,7 @@ li {
 .staff-photos .card:hover {
   border-color: #cd3232;
   transition: all 0.2s;
+  cursor: pointer;
 }
 
 .staff-photos .card-img-overlay {
@@ -498,6 +492,7 @@ iframe {
   .right-round-photo {
     width: 100%;
     margin-left: 0;
+    height: auto;
   }
 
   .left-round-photo-container {
