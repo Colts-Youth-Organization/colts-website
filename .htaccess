@@ -63,6 +63,23 @@ RedirectMatch 301 /tournament_cr(\.html)?$                  /tournament-of-drums
 RedirectMatch 301 /whistleblower_submission(\.html)?$       /whistleblower-submission
 
 # News articles
+RedirectMatch 301 /2004_news                /news-2004
+RedirectMatch 301 /2005_news                /news-2005
+RedirectMatch 301 /2006_news                /news-2006
+RedirectMatch 301 /2007_news                /news-2007
+RedirectMatch 301 /2008_news                /news-2008
+RedirectMatch 301 /2009_news                /news-2009
+RedirectMatch 301 /2010_news                /news-2010
+RedirectMatch 301 /2011_news                /news-2011
+RedirectMatch 301 /2012_news                /news-2012
+RedirectMatch 301 /2013_news                /news-2013
+RedirectMatch 301 /2014_news                /news-2014
+RedirectMatch 301 /2015_news                /news-2015
+RedirectMatch 301 /2016_news                /news-2016
+RedirectMatch 301 /2017_news                /news-2017
+RedirectMatch 301 /2018_news                /news-2018
+RedirectMatch 301 /2019_news                /news-2019
+RedirectMatch 301 /2020_news                /news-2020
 RedirectMatch 301 ^/2004_1(\.html)?$        /news/2004_1
 RedirectMatch 301 ^/2004_2(\.html)?$        /news/2004_2
 RedirectMatch 301 ^/2005_3(\.html)?$        /news/2005_3
