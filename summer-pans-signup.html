@@ -47,11 +47,7 @@
     <meta name="theme-color" content="#ffffff" />
     
     <title>Summer Pans Signup - Colts Youth Organization</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <!-- Salesforce form meta tag -->
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
+    <meta name="description" content="Sign up for the Colts Summer Pans." />
   </head>
 
   <body>
@@ -67,7 +63,7 @@
         <nav class="navbar navbar-expand-md" id="organization-nav">
           <div class="container-fluid px-0">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbars">
-              <span class="navbar-toggler-icon"></span><span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span><span class="visually-hidden">Toggle navigation</span>
             </button>
             <a href="/" class="d-block d-md-none mx-auto"><img src="/img/colts_triangle_logo.svg" id="collapsed-navbar-logo" alt="Colts Youth Organization" /></a>
             <div class="collapse navbar-collapse navbars justify-content-center" id="navbar2">
@@ -178,25 +174,31 @@
             </nav>
 
     <main>
+      <!-- Container -->
       <div class="container-fluid">
+        <!-- Upper section -->
         <div class="row pt-3 px-md-3 px-lg-5">
           <div class="col-12">
             <h1 class="display-3">Sign up.</h1>
             <p>
-              Please fill out this sign up completely, then press SUBMIT. Let us know if you have any other questions about the Summer Pans program! You can
-              <a href="https://store.colts.org/products/colts-summer-pans" target="_blank">click here</a> to pay the Colts Summer Pans fee online.
+              Please fill out this sign up completely, then press SUBMIT. Let us know if you have any other questions about the Summer Pans program!
+              <a href="https://store.colts.org/products/colts-summer-pans" target="_blank" rel="noopener">Click here to pay the Colts Summer Pans fee online</a
+              >.
             </p>
           </div>
         </div>
+        <!-- End upper section -->
+        <!-- Signup form -->
         <div class="row pb-3 px-md-3 px-lg-5">
           <div class="col-lg-10 col-xl-8">
             <form role="form" form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-              <input type="hidden" name="captcha_settings" value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}' />
               <input type="hidden" name="oid" value="00D36000000ox9v" />
+              <!-- Return URL -->
               <input type="hidden" name="retURL" value="https://colts.org/summer-pans-submission" />
               <hr />
               <p class="text-muted">(* = required)</p>
               <h2>STUDENT INFORMATION</h2>
+              <!-- Name row -->
               <div class="row">
                 <!-- FIRST NAME -->
                 <div class="form-group mb-2 col-md-6">
@@ -210,6 +212,7 @@
                   <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required class="form-control" />
                 </div>
               </div>
+              <!-- End name row -->
 
               <!-- BIRTHDATE -->
               <div class="form-group mb-2">
@@ -282,6 +285,8 @@
                 <label for="street" class="control-label">Home Address</label>
                 <input id="street" maxlength="40" name="street" size="20" type="text" class="form-control" />
               </div>
+
+              <!-- City, state, zip, row -->
               <div class="row">
                 <!-- CITY -->
                 <div class="form-group mb-2 col-md-6">
@@ -302,6 +307,7 @@
                   <input id="zip" maxlength="20" name="zip" size="20" type="text" class="form-control" />
                 </div>
               </div>
+              <!-- End city, state, zip, row -->
 
               <hr />
 
@@ -313,6 +319,7 @@
                 <input id="00N3600000SbL5U" name="00N3600000SbL5U" maxlength="25" size="20" type="text" class="form-control" />
               </div>
 
+              <!-- Parent contact row -->
               <div class="row">
                 <!-- PARENT 1.2 -->
                 <div class="form-group mb-2 col-md-6">
@@ -326,6 +333,7 @@
                   <input id="00N3600000SbL5e" name="00N3600000SbL5e" maxlength="40" size="20" type="tel" class="form-control" />
                 </div>
               </div>
+              <!-- End parent contact row -->
 
               <!-- PARENT 2.1 -->
               <div class="form-group mb-2">
@@ -333,6 +341,7 @@
                 <input id="00N3600000SbL5t" name="00N3600000SbL5t" maxlength="25" size="20" type="text" class="form-control" />
               </div>
 
+              <!-- Parent contact row -->
               <div class="row">
                 <!-- PARENT 2.2 -->
                 <div class="form-group mb-2 col-md-6">
@@ -346,6 +355,7 @@
                   <input id="00N3600000SbL68" name="00N3600000SbL68" maxlength="40" size="20" type="tel" class="form-control" />
                 </div>
               </div>
+              <!-- End parent contact row -->
 
               <hr />
 
@@ -398,18 +408,13 @@
                 </select>
               </div>
 
-              <div
-                class="g-recaptcha"
-                data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH"
-                data-callback="enableSubmit"
-                data-expired-callback="disableSubmit"
-              ></div>
-              <br />
               <button id="submitBtn" value="submit" type="submit" class="btn btn-red" disabled>Submit</button>
             </form>
           </div>
         </div>
+        <!-- End signup form -->
       </div>
+      <!-- End container -->
     </main>
     <footer class="footer">
     <div class="container-fluid">
@@ -663,26 +668,5 @@
     
     <!-- Bootstrap JS and Popper.js -->
         <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      function timestamp() {
-        var response = document.getElementById("g-recaptcha-response");
-        if (response == null || response.value.trim() == "") {
-          var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-          elems["ts"] = JSON.stringify(new Date().getTime());
-          document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
-        }
-      }
-      setInterval(timestamp, 500);
-    </script>
-    <script type="text/javascript">
-      var enableSubmit = function () {
-        document.getElementById("submitBtn").disabled = false;
-      };
-
-      var disableSubmit = function () {
-        document.getElementById("submitBtn").disabled = true;
-      };
-    </script>
   </body>
 </html>
