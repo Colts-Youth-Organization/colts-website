@@ -669,4 +669,8 @@ iframe {
   #newsList a.active {
     background-color: #cd3232;
   }
+
+  .text-muted {
+    color: #aaa;
+  }
 }
