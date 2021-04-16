@@ -17,14 +17,14 @@
 .banner-preheading {
   top: 0;
   font-size: 7vw;
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.15vw #fff;
   letter-spacing: 1vw;
 }
 
 .banner-heading {
   position: absolute;
-  font-family: prohibition;
+  font-family: prohibition, Helvetica, sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 12vw;
@@ -35,7 +35,7 @@
 .banner-heading-stroke {
   top: 12.4vw;
   left: 0.3%;
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 0.2vw #ed771d;
 }
 
@@ -59,8 +59,7 @@
   position: absolute;
   bottom: 1%;
   right: 0.5%;
-  color: #efefef
-
+  color: #efefef;
 }
 
 /* Rules for screen size below 1300px */
@@ -77,11 +76,11 @@
     width: 200%;
     height: 100%;
   }
-  
+
   .banner-heading {
     font-size: 24vw;
   }
-  
+
   .banner-preheading {
     font-size: 8.5vw;
   }
@@ -97,9 +96,9 @@
 
   .banner-heading-stroke {
     top: 8.6vw;
-    left: .6%;
+    left: 0.6%;
   }
-  
+
   .banner-heading-fill {
     top: 8vw;
   }
