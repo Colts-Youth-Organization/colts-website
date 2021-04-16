@@ -47,11 +47,7 @@
     <meta name="theme-color" content="#ffffff" />
     
     <title>Colts Move Ins RSVP - Colts Youth Organization</title>
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-
-    <!-- Salesforce form meta tag -->
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8" />
+    <meta name="description" content="Submit your RSVP for Colts move ins." />
   </head>
 
   <body>
@@ -67,7 +63,7 @@
         <nav class="navbar navbar-expand-md" id="organization-nav">
           <div class="container-fluid px-0">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbars">
-              <span class="navbar-toggler-icon"></span><span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span><span class="visually-hidden">Toggle navigation</span>
             </button>
             <a href="/" class="d-block d-md-none mx-auto"><img src="/img/colts_triangle_logo.svg" id="collapsed-navbar-logo" alt="Colts Youth Organization" /></a>
             <div class="collapse navbar-collapse navbars justify-content-center" id="navbar2">
@@ -154,7 +150,9 @@
         
 
     <main>
+      <!-- Container -->
       <div class="container-fluid">
+        <!-- Upper section -->
         <div class="row pt-3 px-md-3 px-lg-5">
           <div class="col-12">
             <h1 class="display-3">Colts Move Ins RSVP.</h1>
@@ -163,19 +161,22 @@
               your plans change, simply submit another RSVP and your information will be updated in our database.
             </p>
             <p>
-              <i>To RSVP for Colt Cadets move ins, you can <a href="/rsvp-move-ins-cadets">click here</a>.</i>
+              <i>You can <a href="/rsvp-move-ins-cadets">click here to RSVP for Colt Cadets move ins</a>.</i>
             </p>
           </div>
         </div>
+        <!-- End upper section -->
+        <!-- RSVP form -->
         <div class="row py-3 px-md-3 px-lg-5">
           <div class="col-lg-10 col-xl-8">
             <form role="form" form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-              <input type="hidden" name="captcha_settings" value='{"keyname":"colts_org","fallback":"true","orgId":"00D36000000ox9v","ts":""}' />
               <input type="hidden" name="oid" value="00D36000000ox9v" />
+              <!-- Return URL -->
               <input type="hidden" name="retURL" value="https://colts.org/rsvp-submission" />
               <hr />
               <p class="text-muted">(* = required)</p>
               <h2>PERSONAL INFORMATION</h2>
+              <!-- Name row -->
               <div class="row">
                 <!-- FIRST NAME -->
                 <div class="form-group mb-2 col-md-6">
@@ -189,6 +190,7 @@
                   <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required class="form-control" />
                 </div>
               </div>
+              <!-- End name row -->
 
               <!-- EMAIL -->
               <div class="form-group mb-2">
@@ -253,14 +255,18 @@
 
               <!-- MOVE IN DATE -->
               <div class="form-group mb-2">
-                <label for="00N3600000T4le9" class="control-label">Color guard and percussion move ins are Sunday, May 19. Brass move ins are Friday, May 24. Notate here what day you will be moving in. If your move in dates are different from these dates, please include the date you will be moving in and explain here.</label>
-                    <textarea  id="00N3600000T4le9" class="form-control" name="00N3600000T4le9" type="text" wrap="soft" maxlength="250"></textarea>
-            </div>
+                <label for="00N3600000T4le9" class="control-label"
+                  >Color guard and percussion move ins are Sunday, May 19. Brass move ins are Friday, May 24. Notate here what day you will be moving in. If
+                  your move in dates are different from these dates, please include the date you will be moving in and explain here.</label
+                >
+                <textarea id="00N3600000T4le9" class="form-control" name="00N3600000T4le9" type="text" wrap="soft" maxlength="250"></textarea>
+              </div>
 
               <!-- ARRIVING LATE OR LEAVING EARLY -->
               <div class="form-group mb-2">
                 <label for="00N3600000Sbl2g" class="control-label"
-                  >100% attendance is an expectation for the season. If you will need to miss any days this summer (example: graduation), please notate those dates and reasons here. Include what day(s) you will be missing from the season.</label
+                  >100% attendance is an expectation for the season. If you will need to miss any days this summer (example: graduation), please notate those
+                  dates and reasons here. Include what day(s) you will be missing from the season.</label
                 >
                 <textarea id="00N3600000Sbl2g" class="form-control" name="00N3600000Sbl2g" type="text" wrap="soft" maxlength="250"></textarea>
               </div>
@@ -306,14 +312,7 @@
                 </select>
               </div>
 
-              <div
-                class="g-recaptcha mb-2"
-                data-sitekey="6LfDfMcUAAAAAD4dFHV_wF_0rHsopFAlmQ__5gwH"
-                data-callback="enableSubmit"
-                data-expired-callback="disableSubmit"
-              ></div>
-              <br />
-              <button id="submitBtn" value="submit" type="submit" class="btn btn-red" disabled>Submit</button>
+              <button id="submitBtn" value="submit" type="submit" class="btn btn-red">Submit</button>
             </form>
           </div>
         </div>
@@ -571,27 +570,6 @@
     
     <!-- Bootstrap JS and Popper.js -->
         <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-      function timestamp() {
-        var response = document.getElementById("g-recaptcha-response");
-        if (response == null || response.value.trim() == "") {
-          var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-          elems["ts"] = JSON.stringify(new Date().getTime());
-          document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
-        }
-      }
-      setInterval(timestamp, 500);
-    </script>
-    <script type="text/javascript">
-      var enableSubmit = function () {
-        document.getElementById("submitBtn").disabled = false;
-      };
-
-      var disableSubmit = function () {
-        document.getElementById("submitBtn").disabled = true;
-      };
-    </script>
     <script>
       function updateCampName(selectObject) {
         var selectedCamp = selectObject.options[selectObject.selectedIndex].text;
